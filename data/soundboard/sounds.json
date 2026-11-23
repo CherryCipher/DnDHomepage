@@ -1,0 +1,56 @@
+{
+  "music": [
+    {
+      "id": "tavern",
+      "name": "Cozy Tavern",
+      "file": "data/soundboard/music/tavern.mp3"
+    },
+    {
+      "id": "forest",
+      "name": "Enchanted Forest",
+      "file": "data/soundboard/music/forest.mp3"
+    },
+    {
+      "id": "battle",
+      "name": "Battle Theme",
+      "file": "data/soundboard/music/battle.mp3"
+    },
+    {
+      "id": "dungeon",
+      "name": "Dark Dungeon",
+      "file": "data/soundboard/music/dungeon.mp3"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "sword",
+      "name": "Sword Clash",
+      "file": "data/soundboard/sfx/sword.mp3"
+    },
+    {
+      "id": "door",
+      "name": "Creaking Door",
+      "file": "data/soundboard/sfx/door.mp3"
+    },
+    {
+      "id": "thunder",
+      "name": "Thunder",
+      "file": "data/soundboard/sfx/thunder.mp3"
+    },
+    {
+      "id": "coins",
+      "name": "Coins",
+      "file": "data/soundboard/sfx/coins.mp3"
+    },
+    {
+      "id": "magic",
+      "name": "Magic Spell",
+      "file": "data/soundboard/sfx/magic.mp3"
+    },
+    {
+      "id": "roar",
+      "name": "Monster Roar",
+      "file": "data/soundboard/sfx/roar.mp3"
+    }
+  ]
+}
