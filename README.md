@@ -26,7 +26,7 @@ Do **not** open `index.html` directly using `file://`: browsers block loading th
 }
 ```
 
-Music loops until stopped or another track is selected. Sound FX play once and can overlap, including while music plays. Track names shown on the buttons come from JSON. The included entries are **examples only**: place actual audio files with matching names into the folders, or replace their JSON entries. No audio files are bundled.
+Music loops until stopped or another track is selected. Switching tracks plays both simultaneously during an equal-power crossfade (default 4 seconds). Choose Off, 1, 2, 4, 6, 8 or 12 seconds in the music player. Pause and Stop remain immediate. Sound FX play once and can overlap, including while music plays. Track names shown on the buttons come from JSON. The included entries are **examples only**: place actual audio files with matching names into the folders, or replace their JSON entries. No audio files are bundled.
 
 ## Add random tables
 
@@ -34,7 +34,7 @@ Edit `data/tables/tables.json`. Add another object to the `tables` array with `i
 
 ## Notes
 
-- Music continues when changing tabs because the audio element is kept alive in JavaScript.
+- Music continues when changing tabs because the audio players stay alive in JavaScript.
 - The browser may require the first playback to be started with a click.
 - Music **does not continue** if the browser tab is closed, refreshed, or the device goes to sleep; some mobile browsers also restrict background playback.
 - MP3 is broadly compatible; other browser-supported audio types may work.
