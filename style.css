@@ -3,3 +3,17 @@
 /* Compact transition control inside the music player */
 .player-actions #crossfade-duration{min-width:0;width:78px;max-width:none;padding:8px 9px;font-size:12px;border-color:#8e7150;background:#201711;color:var(--gold-bright)}
 @media(max-width:740px){.player-actions{gap:12px}.player-actions .volume-control{flex-wrap:wrap}}
+
+/* Side-by-side combat music and sound effects dashboard */
+.soundboard-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
+.soundboard-column{min-width:0;background:linear-gradient(145deg,#291c15,#211712);border:1px solid var(--border);border-radius:12px;padding:20px}
+.soundboard-column .section-heading{min-height:67px;margin-bottom:16px}
+.soundboard-column .section-heading h2{font-size:27px}
+.soundboard-column .sound-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.soundboard-column .sound-button{min-height:100px}
+.fighting-column .player-panel{flex-direction:column;align-items:stretch;padding:15px;margin-bottom:16px;gap:14px}
+.fighting-column .player-actions{justify-content:flex-start}
+.sfx-column .sfx-toolbar{margin:0 0 16px;flex-wrap:wrap;align-items:center}
+.sfx-column .help-text{flex:1 1 175px}
+@media(max-width:780px){.soundboard-columns{grid-template-columns:1fr;gap:18px}.soundboard-column{padding:16px}.soundboard-column .section-heading{min-height:0}}
+@media(max-width:350px){.soundboard-column .sound-grid{grid-template-columns:1fr}}
