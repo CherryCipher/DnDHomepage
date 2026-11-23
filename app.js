@@ -217,7 +217,8 @@ async function loadSoundboard() {
     const music = validSounds(data.music);
     const effects = validSounds(data.sfx);
     byId("music-grid").replaceChildren(...music.map(item => createSoundButton(item, "music")));
-    byId("sfx-grid").replaceChildren(...effects.map(item => createSoundButton(item, "sfx")));
+    byId("battle-sfx-grid").replaceChildren(...effects.filter(item => item.category === "battle").map(item => createSoundButton(item, "sfx")));
+    byId("general-sfx-grid").replaceChildren(...effects.filter(item => item.category !== "battle").map(item => createSoundButton(item, "sfx")));
     if (!music.length || !effects.length) showMessage("soundboard-message", "Add tracks to both sections in data/soundboard/sounds.json.");
   } catch (error) {
     showMessage("soundboard-message", "Could not load sounds.json. Run this website through a local web server, not file://.");
