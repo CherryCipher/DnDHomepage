@@ -1,0 +1,60 @@
+{
+  "tables": [
+    {
+      "id": "tavern-encounters",
+      "name": "Tavern Encounters",
+      "description": "A little trouble, mystery, or unexpected company in the local tavern.",
+      "die": "1d12",
+      "rows": [
+        {
+          "roll": 1,
+          "result": "A hooded stranger quietly pays for the party's drinks."
+        },
+        {
+          "roll": 2,
+          "result": "Two merchants argue loudly over a missing shipment."
+        },
+        {
+          "roll": 3,
+          "result": "A bard sings a song that mentions one of the characters by name."
+        },
+        {
+          "roll": 4,
+          "result": "Someone slips a sealed letter under the party's table."
+        },
+        {
+          "roll": 5,
+          "result": "A heavily armored knight asks for directions to a ruined temple."
+        },
+        {
+          "roll": 6,
+          "result": "The innkeeper discovers a strange symbol burned into the bar."
+        },
+        {
+          "roll": 7,
+          "result": "A nervous traveler claims to have seen a dragon nearby."
+        },
+        {
+          "roll": 8,
+          "result": "A local gambler challenges a character to a game of chance."
+        },
+        {
+          "roll": 9,
+          "result": "The tavern lights flicker, although there is no wind."
+        },
+        {
+          "roll": 10,
+          "result": "A small creature steals food and vanishes through a hole in the wall."
+        },
+        {
+          "roll": 11,
+          "result": "A messenger arrives with news of a missing caravan."
+        },
+        {
+          "roll": 12,
+          "result": "An old adventurer offers to trade a map for a favor."
+        }
+      ]
+    }
+  ]
+}
