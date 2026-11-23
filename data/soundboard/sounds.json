@@ -8,7 +8,12 @@
     {
       "id": "forest",
       "name": "Enchanted Forest",
-      "file": "data/soundboard/music/forest.mp3"
+      "file": "data/soundboard/music/forest.wav"
+    },
+    {
+      "id": "beach",
+      "name": "Beach - Waves",
+      "file": "data/soundboard/music/beach.wav"
     },
     {
       "id": "battle",
@@ -16,9 +21,24 @@
       "file": "data/soundboard/music/battle.mp3"
     },
     {
+      "id": "night",
+      "name": "Night time",
+      "file": "data/soundboard/music/night.mp3"
+    },
+    {
       "id": "dungeon",
       "name": "Dark Dungeon",
-      "file": "data/soundboard/music/dungeon.mp3"
+      "file": "data/soundboard/music/dungeon.wav"
+    },
+    {
+      "id": "sewer",
+      "name": "Sewer | Cave",
+      "file": "data/soundboard/music/sewer.wav"
+    },
+    {
+      "id": "city",
+      "name": "Peacfull City",
+      "file": "data/soundboard/music/town.mp3"
     }
   ],
   "sfx": [
@@ -61,6 +81,36 @@
       "id": "waterspray",
       "name": "Waterspray",
       "file": "data/soundboard/sfx/Waterspray 1.wav"
+    },
+    {
+      "id": "sword",
+      "name": "Sword Clash",
+      "file": "data/soundboard/sfx/sword.mp3"
+    },
+    {
+      "id": "door",
+      "name": "Creaking Door",
+      "file": "data/soundboard/sfx/door.mp3"
+    },
+    {
+      "id": "thunder",
+      "name": "Thunder",
+      "file": "data/soundboard/sfx/thunder.mp3"
+    },
+    {
+      "id": "coins",
+      "name": "Coins",
+      "file": "data/soundboard/sfx/coins.mp3"
+    },
+    {
+      "id": "magic",
+      "name": "Magic Spell",
+      "file": "data/soundboard/sfx/magic.mp3"
+    },
+    {
+      "id": "roar",
+      "name": "Monster Roar",
+      "file": "data/soundboard/sfx/roar.mp3"
     }
   ]
 }
