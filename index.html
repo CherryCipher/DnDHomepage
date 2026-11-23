@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#21170f">
+  <title>Dungeon Master's Toolkit</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="brand-mark" aria-hidden="true">✦</div>
+      <div>
+        <p class="eyebrow">THE GAME MASTER'S DESK</p>
+        <h1>Dungeon Master's Toolkit</h1>
+        <p class="subtitle">Atmosphere, encounters & the roll of fate.</p>
+      </div>
+    </header>
+
+    <nav class="tabs" aria-label="Main navigation">
+      <button class="tab is-active" id="tab-soundboard" type="button" aria-selected="true" aria-controls="panel-soundboard" role="tab">♫ &nbsp; Soundboard</button>
+      <button class="tab" id="tab-tables" type="button" aria-selected="false" aria-controls="panel-tables" role="tab">⚄ &nbsp; Random Tables</button>
+    </nav>
+
+    <main>
+      <section id="panel-soundboard" class="tab-panel" role="tabpanel" aria-labelledby="tab-soundboard">
+        <div class="section-heading">
+          <div><p class="eyebrow">SET THE SCENE</p><h2>Music</h2></div>
+          <span class="section-decoration" aria-hidden="true">✧ ━ ✧</span>
+        </div>
+        <div class="player-panel" aria-label="Music controls">
+          <div class="now-playing">
+            <span class="player-symbol" aria-hidden="true">♫</span>
+            <div><span class="muted-label">NOW PLAYING</span><strong id="now-playing">Nothing playing</strong><span id="player-status" class="player-status">Choose a track to begin</span></div>
+          </div>
+          <div class="player-actions">
+            <button id="pause-music" type="button" class="control-button" disabled>Pause</button>
+            <button id="stop-music" type="button" class="control-button" disabled>Stop</button>
+            <label class="volume-control" for="music-volume"><span>Volume</span><input id="music-volume" type="range" min="0" max="100" value="65"><output id="music-volume-value" for="music-volume">65%</output></label>
+          </div>
+        </div>
+        <div id="music-grid" class="sound-grid" aria-label="Music tracks"></div>
+
+        <div class="section-heading sfx-heading">
+          <div><p class="eyebrow">SOUNDS OF THE WORLD</p><h2>Sound FX</h2></div>
+          <span class="section-decoration" aria-hidden="true">✧ ━ ✧</span>
+        </div>
+        <div class="sfx-toolbar">
+          <p class="help-text">Effects play once, over your music.</p>
+          <label class="volume-control" for="sfx-volume"><span>FX volume</span><input id="sfx-volume" type="range" min="0" max="100" value="85"><output id="sfx-volume-value" for="sfx-volume">85%</output></label>
+        </div>
+        <div id="sfx-grid" class="sound-grid" aria-label="Sound effects"></div>
+        <p id="soundboard-message" class="message" role="status" aria-live="polite"></p>
+      </section>
+
+      <section id="panel-tables" class="tab-panel" role="tabpanel" aria-labelledby="tab-tables" hidden>
+        <div class="section-heading"><div><p class="eyebrow">LET FATE DECIDE</p><h2>Random Tables</h2></div><span class="section-decoration" aria-hidden="true">✧ ━ ✧</span></div>
+        <div class="table-toolbar"><label for="table-select">Choose a table</label><select id="table-select"><option value="">Loading tables…</option></select></div>
+        <article class="random-table-card">
+          <div class="table-intro"><h3 id="table-title"></h3><p id="table-description"></p><span id="table-die" class="die-badge"></span></div>
+          <div class="table-scroll"><table><thead><tr><th scope="col">Roll</th><th scope="col">Result</th></tr></thead><tbody id="table-rows"></tbody></table></div>
+          <p class="table-note">Roll your own dice and look up the result above.</p>
+        </article>
+        <p id="tables-message" class="message" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+    <footer>✦ &nbsp; Made for tales yet untold &nbsp; ✦</footer>
+  </div>
+</body>
+</html>
