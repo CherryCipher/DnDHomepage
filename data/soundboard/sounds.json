@@ -23,34 +23,44 @@
   ],
   "sfx": [
     {
-      "id": "sword",
-      "name": "Sword Clash",
-      "file": "data/soundboard/sfx/sword.mp3"
+      "id": "chest-open",
+      "name": "Chest Open",
+      "file": "data/soundboard/sfx/Chest Open 1.wav"
     },
     {
-      "id": "door",
-      "name": "Creaking Door",
-      "file": "data/soundboard/sfx/door.mp3"
+      "id": "chop",
+      "name": "Chop",
+      "file": "data/soundboard/sfx/chop 1.wav"
     },
     {
-      "id": "thunder",
-      "name": "Thunder",
-      "file": "data/soundboard/sfx/thunder.mp3"
+      "id": "fireball",
+      "name": "Fireball",
+      "file": "data/soundboard/sfx/Fireball 1.wav"
     },
     {
-      "id": "coins",
-      "name": "Coins",
-      "file": "data/soundboard/sfx/coins.mp3"
+      "id": "ice-barrage",
+      "name": "Ice Barrage",
+      "file": "data/soundboard/sfx/Ice Barrage 1.wav"
     },
     {
-      "id": "magic",
-      "name": "Magic Spell",
-      "file": "data/soundboard/sfx/magic.mp3"
+      "id": "lock-unlock",
+      "name": "Lock Unlock",
+      "file": "data/soundboard/sfx/Lock Unlock.wav"
     },
     {
-      "id": "roar",
-      "name": "Monster Roar",
-      "file": "data/soundboard/sfx/roar.mp3"
+      "id": "rock-wall",
+      "name": "Rock Wall",
+      "file": "data/soundboard/sfx/Rock Wall 1.wav"
+    },
+    {
+      "id": "sword-unsheath",
+      "name": "Sword Unsheath",
+      "file": "data/soundboard/sfx/Sword Unsheath 1.wav"
+    },
+    {
+      "id": "waterspray",
+      "name": "Waterspray",
+      "file": "data/soundboard/sfx/Waterspray 1.wav"
     }
   ]
 }
