@@ -45,72 +45,86 @@
     {
       "id": "chest-open",
       "name": "Chest Open",
-      "file": "data/soundboard/sfx/Chest Open 1.wav"
+      "file": "data/soundboard/sfx/Chest Open 1.wav",
+      "category": "general"
     },
     {
       "id": "chop",
       "name": "Chop",
-      "file": "data/soundboard/sfx/chop 1.wav"
+      "file": "data/soundboard/sfx/chop 1.wav",
+      "category": "general"
     },
     {
       "id": "fireball",
       "name": "Fireball",
-      "file": "data/soundboard/sfx/Fireball 1.wav"
+      "file": "data/soundboard/sfx/Fireball 1.wav",
+      "category": "battle"
     },
     {
       "id": "ice-barrage",
       "name": "Ice Barrage",
-      "file": "data/soundboard/sfx/Ice Barrage 1.wav"
+      "file": "data/soundboard/sfx/Ice Barrage 1.wav",
+      "category": "battle"
     },
     {
       "id": "lock-unlock",
       "name": "Lock Unlock",
-      "file": "data/soundboard/sfx/Lock Unlock.wav"
+      "file": "data/soundboard/sfx/Lock Unlock.wav",
+      "category": "general"
     },
     {
       "id": "rock-wall",
       "name": "Rock Wall",
-      "file": "data/soundboard/sfx/Rock Wall 1.wav"
+      "file": "data/soundboard/sfx/Rock Wall 1.wav",
+      "category": "battle"
     },
     {
       "id": "sword-unsheath",
       "name": "Sword Unsheath",
-      "file": "data/soundboard/sfx/Sword Unsheath 1.wav"
+      "file": "data/soundboard/sfx/Sword Unsheath 1.wav",
+      "category": "battle"
     },
     {
       "id": "waterspray",
       "name": "Waterspray",
-      "file": "data/soundboard/sfx/Waterspray 1.wav"
+      "file": "data/soundboard/sfx/Waterspray 1.wav",
+      "category": "battle"
     },
     {
       "id": "sword",
       "name": "Sword Clash",
-      "file": "data/soundboard/sfx/sword.mp3"
+      "file": "data/soundboard/sfx/sword.mp3",
+      "category": "battle"
     },
     {
       "id": "door",
       "name": "Creaking Door",
-      "file": "data/soundboard/sfx/door.mp3"
+      "file": "data/soundboard/sfx/door.mp3",
+      "category": "general"
     },
     {
       "id": "thunder",
       "name": "Thunder",
-      "file": "data/soundboard/sfx/thunder.mp3"
+      "file": "data/soundboard/sfx/thunder.mp3",
+      "category": "general"
     },
     {
       "id": "coins",
       "name": "Coins",
-      "file": "data/soundboard/sfx/coins.mp3"
+      "file": "data/soundboard/sfx/coins.mp3",
+      "category": "general"
     },
     {
       "id": "magic",
       "name": "Magic Spell",
-      "file": "data/soundboard/sfx/magic.mp3"
+      "file": "data/soundboard/sfx/magic.mp3",
+      "category": "battle"
     },
     {
       "id": "roar",
       "name": "Monster Roar",
-      "file": "data/soundboard/sfx/roar.mp3"
+      "file": "data/soundboard/sfx/roar.mp3",
+      "category": "battle"
     }
   ]
 }
