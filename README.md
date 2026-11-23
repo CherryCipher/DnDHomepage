@@ -22,11 +22,12 @@ Do **not** open `index.html` directly using `file://`: browsers block loading th
 {
   "id": "rain",
   "name": "Rain Outside",
-  "file": "data/soundboard/sfx/rain.mp3"
+  "file": "data/soundboard/sfx/rain.mp3",
+  "category": "general"
 }
 ```
 
-Music loops until stopped or another track is selected. Switching tracks plays both simultaneously during an equal-power crossfade (default 4 seconds). Choose Off, 1, 2, 4, 6, 8 or 12 seconds in the music player. Pause and Stop remain immediate. Sound FX play once and can overlap, including while music plays. Track names shown on the buttons come from JSON. The included entries are **examples only**: place actual audio files with matching names into the folders, or replace their JSON entries. No audio files are bundled.
+Music displays full-width above two side-by-side sound-effect panels: Battle SFX and General SFX. Add `"category": "battle"` or `"category": "general"` to each object in the `sfx` array; missing categories default to General SFX. No separate sound folders are necessary.\n\nMusic loops until stopped or another track is selected. Switching tracks plays both simultaneously during an equal-power crossfade (default 4 seconds). Choose Off, 1, 2, 4, 6, 8 or 12 seconds in the music player. Pause and Stop remain immediate. Sound FX play once and can overlap, including while music plays. Track names shown on the buttons come from JSON. The included entries are **examples only**: place actual audio files with matching names into the folders, or replace their JSON entries. No audio files are bundled.
 
 ## Add random tables
 
