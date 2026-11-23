@@ -1,10 +1,11 @@
 "use strict";
 
 const byId = (id) => document.getElementById(id);
-const musicAudio = new Audio();
-musicAudio.loop = true;
-musicAudio.preload = "none";
-let currentTrack = null;
+// Crossfades use two independent HTMLAudioElements so both tracks overlap.
+let activeMusic = null; // { audio, track, gain: 0..1 }
+let outgoingMusic = null;
+let fadeFrame = null;
+let transitionId = 0;
 let paused = false;
 const activeEffects = new Set();
 
@@ -12,51 +13,156 @@ function showMessage(id, message = "") {
   byId(id).textContent = message;
 }
 
+function musicVolume() {
+  return Number(byId("music-volume").value) / 100;
+}
+
+function applyMusicVolume() {
+  for (const player of [activeMusic, outgoingMusic]) {
+    if (player) player.audio.volume = Math.max(0, Math.min(1, player.gain * musicVolume()));
+  }
+}
+
+function discardPlayer(player) {
+  if (!player) return;
+  player.audio.pause();
+  player.audio.removeAttribute("src");
+  player.audio.load();
+}
+
+function cancelFade() {
+  if (fadeFrame !== null) cancelAnimationFrame(fadeFrame);
+  fadeFrame = null;
+}
+
 function updatePlayer() {
-  byId("now-playing").textContent = currentTrack ? currentTrack.name : "Nothing playing";
-  byId("player-status").textContent = currentTrack ? (paused ? "Paused · looping enabled" : "Playing · looping enabled") : "Choose a track to begin";
-  byId("pause-music").disabled = !currentTrack;
-  byId("stop-music").disabled = !currentTrack;
+  const track = activeMusic?.track;
+  byId("now-playing").textContent = track ? track.name : "Nothing playing";
+  byId("player-status").textContent = track
+    ? (paused ? "Paused · looping enabled" : outgoingMusic ? "Crossfading · looping enabled" : "Playing · looping enabled")
+    : "Choose a track to begin";
+  byId("pause-music").disabled = !track;
+  byId("stop-music").disabled = !track;
   byId("pause-music").textContent = paused ? "Resume" : "Pause";
   document.querySelectorAll("#music-grid .sound-button").forEach(button => {
-    const selected = !!currentTrack && button.dataset.id === currentTrack.id;
+    const selected = !!track && button.dataset.id === track.id;
     button.classList.toggle("is-playing", selected);
     button.setAttribute("aria-pressed", String(selected && !paused));
   });
 }
 
+function finishFade() {
+  cancelFade();
+  discardPlayer(outgoingMusic);
+  outgoingMusic = null;
+  if (activeMusic) activeMusic.gain = 1;
+  applyMusicVolume();
+  updatePlayer();
+}
+
 function stopMusic() {
-  musicAudio.pause();
-  musicAudio.removeAttribute("src");
-  musicAudio.load();
-  currentTrack = null;
+  transitionId++;
+  cancelFade();
+  discardPlayer(activeMusic);
+  discardPlayer(outgoingMusic);
+  activeMusic = null;
+  outgoingMusic = null;
   paused = false;
   showMessage("soundboard-message");
   updatePlayer();
 }
 
-async function playMusic(track) {
-  showMessage("soundboard-message");
-  if (currentTrack?.id === track.id) {
-    if (!paused) return;
-    try { await musicAudio.play(); paused = false; }
-    catch { showMessage("soundboard-message", "Unable to play this file. Check its name and location."); }
-    updatePlayer();
+function crossfade(durationMs) {
+  if (!activeMusic) return;
+  if (durationMs === 0) {
+    finishFade();
     return;
   }
-  musicAudio.pause();
-  currentTrack = track;
+  const incoming = activeMusic;
+  const outgoing = outgoingMusic;
+  const incomingStart = incoming.gain;
+  const outgoingStart = outgoing?.gain ?? 0;
+  const started = performance.now();
+  function step(now) {
+    // A newer transition, pause or stop cancels this animation frame.
+    if (activeMusic !== incoming || outgoingMusic !== outgoing || paused) return;
+    const progress = Math.min(1, (now - started) / durationMs);
+    // Equal-power crossfade avoids an obvious volume dip in the middle.
+    incoming.gain = incomingStart + (1 - incomingStart) * Math.sin(progress * Math.PI / 2);
+    if (outgoing) outgoing.gain = outgoingStart * Math.cos(progress * Math.PI / 2);
+    applyMusicVolume();
+    if (progress >= 1) finishFade();
+    else fadeFrame = requestAnimationFrame(step);
+  }
+  fadeFrame = requestAnimationFrame(step);
+}
+
+async function playMusic(track) {
+  showMessage("soundboard-message");
+  if (activeMusic?.track.id === track.id) {
+    if (paused) await togglePause();
+    return;
+  }
+
+  const requestId = ++transitionId;
+  // A fast second click interrupts an earlier transition, retaining the
+  // currently selected track as the one to fade out.
+  cancelFade();
+  discardPlayer(outgoingMusic);
+  outgoingMusic = null;
+  if (activeMusic) {
+    activeMusic.gain = 1;
+    applyMusicVolume();
+  }
+  const previous = activeMusic;
+  const audio = new Audio(track.file);
+  audio.loop = true;
+  audio.preload = "auto";
+  audio.volume = 0;
+  const incoming = { audio, track, gain: 0 };
+  try {
+    await audio.play();
+  } catch {
+    discardPlayer(incoming);
+    if (requestId === transitionId) {
+      showMessage("soundboard-message", "Could not load “" + track.name + "”. Check " + track.file);
+      updatePlayer();
+    }
+    return;
+  }
+  if (requestId !== transitionId) {
+    discardPlayer(incoming);
+    return;
+  }
+  activeMusic = incoming;
+  outgoingMusic = previous;
   paused = false;
-  musicAudio.src = track.file;
-  musicAudio.loop = true;
+  if (outgoingMusic && outgoingMusic.audio.paused) {
+    discardPlayer(outgoingMusic);
+    outgoingMusic = null;
+  }
+  applyMusicVolume();
   updatePlayer();
-  try { await musicAudio.play(); }
-  catch {
-    if (currentTrack?.id === track.id) {
-      stopMusic();
-      showMessage("soundboard-message", "Could not load “" + track.name + "”. Add its audio file at " + track.file);
+  const durationMs = Number(byId("crossfade-duration").value) * 1000;
+  crossfade(durationMs);
+}
+
+async function togglePause() {
+  if (!activeMusic) return;
+  if (!paused) {
+    // Keep a single full-volume track paused; don't leave two half-faded tracks.
+    finishFade();
+    activeMusic.audio.pause();
+    paused = true;
+  } else {
+    try {
+      await activeMusic.audio.play();
+      paused = false;
+    } catch {
+      showMessage("soundboard-message", "Could not resume this track.");
     }
   }
+  updatePlayer();
 }
 
 function playSfx(effect, button) {
@@ -175,34 +281,16 @@ function setupTabs() {
 }
 
 byId("music-volume").addEventListener("input", (event) => {
-  musicAudio.volume = Number(event.target.value) / 100;
   byId("music-volume-value").textContent = event.target.value + "%";
+  applyMusicVolume();
 });
 byId("sfx-volume").addEventListener("input", (event) => {
   const volume = Number(event.target.value) / 100;
   byId("sfx-volume-value").textContent = event.target.value + "%";
   activeEffects.forEach(audio => { audio.volume = volume; });
 });
-byId("pause-music").addEventListener("click", async () => {
-  if (!currentTrack) return;
-  if (paused) {
-    try { await musicAudio.play(); paused = false; }
-    catch { showMessage("soundboard-message", "Could not resume this track."); }
-  } else {
-    musicAudio.pause();
-    paused = true;
-  }
-  updatePlayer();
-});
+byId("pause-music").addEventListener("click", togglePause);
 byId("stop-music").addEventListener("click", stopMusic);
-musicAudio.addEventListener("error", () => {
-  if (currentTrack) {
-    const track = currentTrack;
-    stopMusic();
-    showMessage("soundboard-message", "Unable to play “" + track.name + "”. Check " + track.file);
-  }
-});
-musicAudio.volume = Number(byId("music-volume").value) / 100;
 setupTabs();
 loadSoundboard();
 loadTables();
