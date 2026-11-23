@@ -1,11 +1,6 @@
 {
   "music": [
     {
-      "id": "tavern",
-      "name": "Cozy Tavern",
-      "file": "data/soundboard/music/tavern.mp3"
-    },
-    {
       "id": "forest",
       "name": "Enchanted Forest",
       "file": "data/soundboard/music/forest.wav"
@@ -44,7 +39,7 @@
   "sfx": [
     {
       "id": "chest-open",
-      "name": "Chest Open",
+      "name": "Chest | Door Open",
       "file": "data/soundboard/sfx/Chest Open 1.wav",
       "category": "general"
     },
@@ -73,6 +68,12 @@
       "category": "general"
     },
     {
+      "id": "wood-walk",
+      "name": "Footstep - Wood",
+      "file": "data/soundboard/sfx/Wood Walk 1.wav",
+      "category": "general"
+    },
+    {
       "id": "rock-wall",
       "name": "Rock Wall",
       "file": "data/soundboard/sfx/Rock Wall 1.wav",
@@ -93,37 +94,7 @@
     {
       "id": "sword",
       "name": "Sword Clash",
-      "file": "data/soundboard/sfx/sword.mp3",
-      "category": "battle"
-    },
-    {
-      "id": "door",
-      "name": "Creaking Door",
-      "file": "data/soundboard/sfx/door.mp3",
-      "category": "general"
-    },
-    {
-      "id": "thunder",
-      "name": "Thunder",
-      "file": "data/soundboard/sfx/thunder.mp3",
-      "category": "general"
-    },
-    {
-      "id": "coins",
-      "name": "Coins",
-      "file": "data/soundboard/sfx/coins.mp3",
-      "category": "general"
-    },
-    {
-      "id": "magic",
-      "name": "Magic Spell",
-      "file": "data/soundboard/sfx/magic.mp3",
-      "category": "battle"
-    },
-    {
-      "id": "roar",
-      "name": "Monster Roar",
-      "file": "data/soundboard/sfx/roar.mp3",
+      "file": "data/soundboard/sfx/Sword Blocked 2.wav",
       "category": "battle"
     }
   ]
