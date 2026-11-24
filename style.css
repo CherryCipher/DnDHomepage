@@ -66,3 +66,8 @@
 .initiative-empty{padding:24px 8px;text-align:center;font-style:italic;color:var(--muted)}
 .initiative-note{margin-top:17px}
 @media(max-width:600px){.initiative-panel{padding:14px}.initiative-entry{gap:7px;padding:9px 6px}.initiative-name{font-size:13px}.initiative-hp{width:61px}.initiative-hp-label{gap:4px}.initiative-remove{padding:7px}.initiative-form{align-items:center}.initiative-form label{width:35px}.initiative-add{flex:1 1 100%}}
+
+/* The final nav item opens the wiki without navigating away from the toolkit. */
+.tabs{flex-wrap:wrap}
+.tabs .wiki-tab{display:inline-flex;align-items:center;text-decoration:none;white-space:nowrap}
+.tabs .wiki-tab:hover,.tabs .wiki-tab:focus-visible{color:var(--gold-bright)}
