@@ -3,7 +3,9 @@
     {
       "id": "forest",
       "name": "Enchanted Forest",
-      "file": "data/soundboard/music/forest.wav"
+      "files": [
+        "data/soundboard/music/forest.wav"
+      ]
     },
     {
       "id": "beach",
@@ -52,8 +54,10 @@
     {
       "id": "fireball",
       "name": "Fireball",
-      "file": "data/soundboard/sfx/Fireball 1.wav",
-      "category": "battle"
+      "category": "battle",
+      "files": [
+        "data/soundboard/sfx/Fireball 1.wav"
+      ]
     },
     {
       "id": "ice-barrage",
