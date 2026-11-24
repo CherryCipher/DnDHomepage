@@ -63,3 +63,11 @@ Edit `data/tables/tables.json`. Add another object to the `tables` array with `i
 - Music **does not continue** if the browser tab is closed, refreshed, or the device goes to sleep; some mobile browsers also restrict background playback.
 - MP3 is broadly compatible; other browser-supported audio types may work.
 - No build tools, framework, database, or remote services are needed.
+
+## Hempstead Wiki shortcut
+
+The final navigation item opens https://hempstead.cherrynuggetgames.nl/ in a new browser tab. This keeps the DM toolkit (including any playing audio and initiative state) open in its original tab.
+
+## Deploying online
+
+This is a static HTML/CSS/JavaScript site. Serve the repository contents through HTTPS from any static web host (or an Nginx web root behind a reverse proxy); no database, Python server or backend is required in production. Use the Python command above only for local development. Upload the actual music/SFX files into the paths specified by `sounds.json`, and verify playback and crossfades over HTTPS. Large WAV files can be slow to load remotely; consider compressing them. Ensure you have permission to distribute or stream the audio, and protect any DM-only tables or confidential notes before publishing: everything in the static site, including JSON, is accessible to site visitors. The initiative tracker stores data in each browser's localStorage, not on the server, and does not sync between devices or domains.
