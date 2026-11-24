@@ -55,6 +55,822 @@
           "result": "An old adventurer offers to trade a map for a favor."
         }
       ]
+    },
+    {
+      "id": "hempstead-havenlading",
+      "name": "Hempstead — Havenlading & Scheepsgoederen (d100)",
+      "description": "Wat vinden de avonturiers in een scheepsruim, tussen vracht of op de kade? Precies 20 van de 100 resultaten zijn gestolen, bijzonder of gevaarlijk en staan herkenbaar tussen haakjes. De concrete details zijn nieuwe DM-invulling, geen bevestigde wiki-lore.",
+      "die": "1d100",
+      "rows": [
+        {
+          "roll": 1,
+          "result": "Vaten gezouten haring, bestemd voor de wintervoorraad van de stad."
+        },
+        {
+          "roll": 2,
+          "result": "Kisten met gedroogde kabeljauw, zorgvuldig in stro verpakt."
+        },
+        {
+          "roll": 3,
+          "result": "Zakken grof zeezout uit de kustpannen."
+        },
+        {
+          "roll": 4,
+          "result": "Rollen ruw linnen voor zeilen en werkhemden."
+        },
+        {
+          "roll": 5,
+          "result": "[Gestolen] Zilveren kelken met weggekrabde wapenschilden, verborgen tussen aardewerk."
+        },
+        {
+          "roll": 6,
+          "result": "Balen wol met het merk van een binnenlandse spinnerij."
+        },
+        {
+          "roll": 7,
+          "result": "Planken eikenhout, op maat gezaagd voor scheepsreparaties."
+        },
+        {
+          "roll": 8,
+          "result": "Bundels pijnboomhout voor masten en steigers."
+        },
+        {
+          "roll": 9,
+          "result": "Vaten pek voor het dichten van scheepsnaden."
+        },
+        {
+          "roll": 10,
+          "result": "[Gevaarlijk] Een gebarsten vat bijtend alchemistisch zuur; de bodem van de kist sist."
+        },
+        {
+          "roll": 11,
+          "result": "Krullen henneptouw in verschillende diktes."
+        },
+        {
+          "roll": 12,
+          "result": "Kisten ijzeren spijkers en klinknagels."
+        },
+        {
+          "roll": 13,
+          "result": "Zakken tarwe uit het achterland."
+        },
+        {
+          "roll": 14,
+          "result": "Vaten gerst voor brouwers en bakkers."
+        },
+        {
+          "roll": 15,
+          "result": "[Speciaal] Een hermetisch gesloten kist met een kaart van onbekende zeestromingen."
+        },
+        {
+          "roll": 16,
+          "result": "Mandjes gedroogde erwten en bonen."
+        },
+        {
+          "roll": 17,
+          "result": "Kruiwagens vol kool, nog met aarde aan de wortels."
+        },
+        {
+          "roll": 18,
+          "result": "Zakken aardappelen voor de gaarkeukens."
+        },
+        {
+          "roll": 19,
+          "result": "Vaten appelcider voor herbergen langs de kade."
+        },
+        {
+          "roll": 20,
+          "result": "[Gestolen] Juwelen in een zak meel; een recent uitgescheurde inventarislijst ligt erbij."
+        },
+        {
+          "roll": 21,
+          "result": "Flessen eenvoudige rode tafelwijn in strohulzen."
+        },
+        {
+          "roll": 22,
+          "result": "Zakken koffiebonen voor handelshuizen en koffiehuizen."
+        },
+        {
+          "roll": 23,
+          "result": "Kisten donkere thee in met was beklede blikken."
+        },
+        {
+          "roll": 24,
+          "result": "Jutezakken peperkorrels en kruidnagel."
+        },
+        {
+          "roll": 25,
+          "result": "[Gevaarlijk] Flacons met onstabiel vuurpoeder, gemerkt met een waarschuwingssymbool."
+        },
+        {
+          "roll": 26,
+          "result": "Bundels kaneelstokken, gebonden met rood draad."
+        },
+        {
+          "roll": 27,
+          "result": "Potten honing uit landelijke bijenstallen."
+        },
+        {
+          "roll": 28,
+          "result": "Kisten harde kaas in was gewikkeld."
+        },
+        {
+          "roll": 29,
+          "result": "Vaten boter in pekel voor langere zeereizen."
+        },
+        {
+          "roll": 30,
+          "result": "[Speciaal] Een intact scheepslogboek van een schip dat jaren geleden vermist raakte."
+        },
+        {
+          "roll": 31,
+          "result": "Mandjes appels en peren, met veel kneuzingen."
+        },
+        {
+          "roll": 32,
+          "result": "Kransen gedroogde knoflook en uien."
+        },
+        {
+          "roll": 33,
+          "result": "Blikken met reuzel en bakvet voor de scheepskeuken."
+        },
+        {
+          "roll": 34,
+          "result": "Stukken gerookt vlees, aan haken opgehangen."
+        },
+        {
+          "roll": 35,
+          "result": "[Gestolen] Een partij uniformen en zegelringen van de havenwacht."
+        },
+        {
+          "roll": 36,
+          "result": "Zakken meel die bij iedere stap wit stof verspreiden."
+        },
+        {
+          "roll": 37,
+          "result": "Vaten azijn voor voedselconservering."
+        },
+        {
+          "roll": 38,
+          "result": "Stellingen met glazen flessen voor een plaatselijke bottelaar."
+        },
+        {
+          "roll": 39,
+          "result": "Scherven en hele kruiken van goedkoop aardewerk."
+        },
+        {
+          "roll": 40,
+          "result": "[Gevaarlijk] Een krat met levend giftig ongedierte dat zich door het hout knaagt."
+        },
+        {
+          "roll": 41,
+          "result": "Kisten geëmailleerde borden en drinkbekers."
+        },
+        {
+          "roll": 42,
+          "result": "Bundels koperen kookpotten en deksels."
+        },
+        {
+          "roll": 43,
+          "result": "Kisten met tinnen lepels, kommen en kandelaars."
+        },
+        {
+          "roll": 44,
+          "result": "Rollen geelbruine leerhuiden voor schoenmakers."
+        },
+        {
+          "roll": 45,
+          "result": "[Speciaal] Een kleine verzegelde koker met een magisch licht dat nooit dooft."
+        },
+        {
+          "roll": 46,
+          "result": "Bundels laarzen voor havenarbeiders."
+        },
+        {
+          "roll": 47,
+          "result": "Kisten simpele wollen dekens voor bemanningen."
+        },
+        {
+          "roll": 48,
+          "result": "Rollen gekleurde katoen voor marktkooplui."
+        },
+        {
+          "roll": 49,
+          "result": "Balenscheden katoen die naar zout water ruiken."
+        },
+        {
+          "roll": 50,
+          "result": "[Gestolen] Een kostbaar beeld uit een tempel, haastig in teerdoek gewikkeld."
+        },
+        {
+          "roll": 51,
+          "result": "Zakken steenkool voor smederijen en kachels."
+        },
+        {
+          "roll": 52,
+          "result": "Kisten houtskool voor de ovens van ambachtslieden."
+        },
+        {
+          "roll": 53,
+          "result": "Blokken kaarsvet voor de kaarsenmaker."
+        },
+        {
+          "roll": 54,
+          "result": "Kisten olie- en walvistraanlampen met reservepitten."
+        },
+        {
+          "roll": 55,
+          "result": "[Gevaarlijk] Flessen met besmettelijk ogende schimmel; op de kist staat QUARANTAINE."
+        },
+        {
+          "roll": 56,
+          "result": "Vaten lampolie in stevig dichtgekitte tonnen."
+        },
+        {
+          "roll": 57,
+          "result": "Bundels lege houten kratten en rieten manden."
+        },
+        {
+          "roll": 58,
+          "result": "Kisten papier met watermerken van een verre papiermolen."
+        },
+        {
+          "roll": 59,
+          "result": "Vaten zwarte en blauwe drukinkt."
+        },
+        {
+          "roll": 60,
+          "result": "[Speciaal] Een verzegelde brief met een onbekend koninklijk of adellijk zegel."
+        },
+        {
+          "roll": 61,
+          "result": "Kisten ganzenveren en schrijfpennen."
+        },
+        {
+          "roll": 62,
+          "result": "Rollen perkament en eenvoudig schrijfleer."
+        },
+        {
+          "roll": 63,
+          "result": "Bundels visnetten, enkele met oude reparaties."
+        },
+        {
+          "roll": 64,
+          "result": "Kisten loodgewichten en dobbers voor vissers."
+        },
+        {
+          "roll": 65,
+          "result": "[Gestolen] Gemerkte goudstaven onder een laag steenkool; de stempels zijn beschadigd."
+        },
+        {
+          "roll": 66,
+          "result": "Vaten kurk en kurken stoppen."
+        },
+        {
+          "roll": 67,
+          "result": "Bundels houten roeiriemen voor sloepen."
+        },
+        {
+          "roll": 68,
+          "result": "Kisten bronzen scharnieren en scheepsbeslag."
+        },
+        {
+          "roll": 69,
+          "result": "Kisten katrollen en blokken met ingesleten groeven."
+        },
+        {
+          "roll": 70,
+          "result": "[Gevaarlijk] Een kooi met een agressief roofdier dat voortdurend tegen het slot beukt."
+        },
+        {
+          "roll": 71,
+          "result": "Vaten natuurlijke hars en boomhars."
+        },
+        {
+          "roll": 72,
+          "result": "Kisten scheepskompassen voor de handel."
+        },
+        {
+          "roll": 73,
+          "result": "Rollen grof canvas voor dekzeilen."
+        },
+        {
+          "roll": 74,
+          "result": "Kisten verfpoeders in oker, blauw en rood."
+        },
+        {
+          "roll": 75,
+          "result": "[Speciaal] Een kist zeldzame edelstenen, vergezeld van een vervalst handelscertificaat."
+        },
+        {
+          "roll": 76,
+          "result": "Vaten kalk voor metselaars in de haven."
+        },
+        {
+          "roll": 77,
+          "result": "Stapelstenen en dakpannen voor nieuwe pakhuizen."
+        },
+        {
+          "roll": 78,
+          "result": "Kisten glazen ruitjes voor woningen en winkels."
+        },
+        {
+          "roll": 79,
+          "result": "Bundels rieten matten voor vloeren en ladingbescherming."
+        },
+        {
+          "roll": 80,
+          "result": "[Gestolen] Kostbare schilderijen waarvan de kaders met verse verf zijn overschilderd."
+        },
+        {
+          "roll": 81,
+          "result": "Kisten goedkope houten kinderspeeltjes."
+        },
+        {
+          "roll": 82,
+          "result": "Vaten ingelegde groenten met een scherpe geur."
+        },
+        {
+          "roll": 83,
+          "result": "Zakjes gedroogde geneeskrachtige kruiden voor apothekers."
+        },
+        {
+          "roll": 84,
+          "result": "Kisten verbandlinnen, naalden en eenvoudige instrumenten."
+        },
+        {
+          "roll": 85,
+          "result": "[Gevaarlijk] Een metalen cilinder die hoorbaar tikt en onnatuurlijk koud aanvoelt."
+        },
+        {
+          "roll": 86,
+          "result": "Vaten zeep met sterk lavendelparfum."
+        },
+        {
+          "roll": 87,
+          "result": "Bundels borstels en bezems voor scheepsdekken."
+        },
+        {
+          "roll": 88,
+          "result": "Kisten aardewerken bloempotten met jonge stekjes."
+        },
+        {
+          "roll": 89,
+          "result": "Zakken zaden voor tuinders buiten de stadsmuren."
+        },
+        {
+          "roll": 90,
+          "result": "[Speciaal] Een zorgvuldig ingepakte oud-religieuze reliek met een onleesbare inscriptie."
+        },
+        {
+          "roll": 91,
+          "result": "Rieten kooien met kakelende kippen."
+        },
+        {
+          "roll": 92,
+          "result": "Houten hokken met twee ongeduldige geiten."
+        },
+        {
+          "roll": 93,
+          "result": "Kisten hoefijzers en tuigonderdelen voor trekpaarden."
+        },
+        {
+          "roll": 94,
+          "result": "Rollen dik vilt voor zadels en isolatie."
+        },
+        {
+          "roll": 95,
+          "result": "[Gestolen] Een zak met recent geslagen munten en een verdwenen muntmeestersstempel."
+        },
+        {
+          "roll": 96,
+          "result": "Kisten kleine spiegels met houten lijsten."
+        },
+        {
+          "roll": 97,
+          "result": "Bundels muziekinstrumenten voor rondreizende artiesten."
+        },
+        {
+          "roll": 98,
+          "result": "Vaten goedkope sterke drank met een douanestempel."
+        },
+        {
+          "roll": 99,
+          "result": "Kisten gekleurde kralen en handelslinten voor de jaarmarkt."
+        },
+        {
+          "roll": 100,
+          "result": "[Gevaarlijk] Een lekke kist met bedwelmende sporen; de dragers worden duizelig."
+        }
+      ]
+    },
+    {
+      "id": "hempstead-straatgebeurtenissen",
+      "name": "Hempstead — Straatgebeurtenissen (d100)",
+      "description": "100 korte scènes voor stegen, markten, pakhuizen en drukke kades: van alledaags havenleven tot conflicten, geheimen, ooggetuigen en verhaakhaken. Nieuwe DM-invulling, nog niet gecontroleerd tegen de Hempstead-wiki.",
+      "die": "1d100",
+      "rows": [
+        {
+          "roll": 1,
+          "result": "Een havenarbeider valt flauw onder een te zware baal; niemand wil zijn loon missen."
+        },
+        {
+          "roll": 2,
+          "result": "Twee matrozen vechten om een onbetaalde dobbelweddenschap."
+        },
+        {
+          "roll": 3,
+          "result": "Een stel zoent achter een stapel viskisten en schrikt als iemand nadert."
+        },
+        {
+          "roll": 4,
+          "result": "Een bedelaar vraagt niet om geld, maar om een droge plek voor zijn schoenen."
+        },
+        {
+          "roll": 5,
+          "result": "Een koerier verliest een envelop met het zegel van een handelshuis."
+        },
+        {
+          "roll": 6,
+          "result": "Een straatverkoper verkoopt warme pasteitjes en weigert te zeggen wat erin zit."
+        },
+        {
+          "roll": 7,
+          "result": "Een kind rent weg met een gestolen appel; de koopman zet de achtervolging in."
+        },
+        {
+          "roll": 8,
+          "result": "Een dronken bootsman zingt luid een lied over een gezonken schip."
+        },
+        {
+          "roll": 9,
+          "result": "Een oude vrouw tekent met krijt een vreemd symbool bij iedere deur in de steeg."
+        },
+        {
+          "roll": 10,
+          "result": "Een wagen met kolen blokkeert een smalle straat; de bestuurder is verdwenen."
+        },
+        {
+          "roll": 11,
+          "result": "Een havenwachter ondervraagt een schipper over ontbrekende vrachtpapieren."
+        },
+        {
+          "roll": 12,
+          "result": "Een jong stel maakt publiekelijk ruzie over een geheime afspraak aan de kade."
+        },
+        {
+          "roll": 13,
+          "result": "Een zwerver wijst zwijgend naar een raam op de derde verdieping."
+        },
+        {
+          "roll": 14,
+          "result": "Een visverkoper beschuldigt zijn buurman van het verkopen van rotte waar."
+        },
+        {
+          "roll": 15,
+          "result": "Een zakkenroller botst tegen een personage en laat een vreemde sleutel vallen."
+        },
+        {
+          "roll": 16,
+          "result": "Een scheepsjongen smeekt om hulp bij het terugvinden van zijn kapitein."
+        },
+        {
+          "roll": 17,
+          "result": "Een groep sjouwers staakt: hun loon is voor de derde week te laat."
+        },
+        {
+          "roll": 18,
+          "result": "Een deftige heer probeert ongezien een volkse kroeg binnen te gaan."
+        },
+        {
+          "roll": 19,
+          "result": "Een hond blaft tegen een dichtgetimmerde kelderdeur waarbinnen iets schuift."
+        },
+        {
+          "roll": 20,
+          "result": "Een vrouw verkoopt amuletten tegen verdrinking en zweert dat ze werken."
+        },
+        {
+          "roll": 21,
+          "result": "Een wagen vol verse bloemen rijdt naar een schip dat vandaag zou vertrekken."
+        },
+        {
+          "roll": 22,
+          "result": "Twee kooplieden vergelijken vervalste weegstenen en beginnen te schelden."
+        },
+        {
+          "roll": 23,
+          "result": "Een kind ziet hoe een man een klein pakket onder een brug verbergt."
+        },
+        {
+          "roll": 24,
+          "result": "Een dobbelaar biedt een spel aan waarbij de inzet een verhaal is, geen geld."
+        },
+        {
+          "roll": 25,
+          "result": "Een ruziënd echtpaar sleept een houten kist in tegengestelde richtingen."
+        },
+        {
+          "roll": 26,
+          "result": "Een smid heeft zijn smidshamer verloren en verdenkt een rivaliserende werkplaats."
+        },
+        {
+          "roll": 27,
+          "result": "Een boodschapper roept dat de volgende veerboot wegens mist niet vertrekt."
+        },
+        {
+          "roll": 28,
+          "result": "Een man betaalt een bedelaar om een bepaalde steeg in de gaten te houden."
+        },
+        {
+          "roll": 29,
+          "result": "Een wachtpost kijkt weg terwijl een ongemerkte kar door de poort rijdt."
+        },
+        {
+          "roll": 30,
+          "result": "Een straatmuzikant speelt dezelfde vier noten telkens als een koopman passeert."
+        },
+        {
+          "roll": 31,
+          "result": "Een jonge visser showt een schelp waar een zacht gefluister uit klinkt."
+        },
+        {
+          "roll": 32,
+          "result": "Een paard slaat op hol wanneer een kanon vanaf een aangemeerd schip klinkt."
+        },
+        {
+          "roll": 33,
+          "result": "Een marktkoopvrouw vindt een gouden ring in een visbuik."
+        },
+        {
+          "roll": 34,
+          "result": "Twee zeelieden besluiten hun conflict met een armworstelwedstrijd."
+        },
+        {
+          "roll": 35,
+          "result": "Een schoonmaker veegt bloedsporen weg vóór iemand vragen kan stellen."
+        },
+        {
+          "roll": 36,
+          "result": "Een kind biedt aan een geheime kortere route door de pakhuizen te wijzen."
+        },
+        {
+          "roll": 37,
+          "result": "Een reiziger vraagt naar een straat die op geen enkel stadsplan staat."
+        },
+        {
+          "roll": 38,
+          "result": "Een bootwerker klaagt over nachtelijk getik vanuit het ruim van een lege boot."
+        },
+        {
+          "roll": 39,
+          "result": "Een man zonder schoenen probeert zijn kostbare mantel te verkopen."
+        },
+        {
+          "roll": 40,
+          "result": "Een dame in rouw zoekt iemand die haar broer op de kade heeft gezien."
+        },
+        {
+          "roll": 41,
+          "result": "Een havenmeester laat een lading wegen en vindt een onverklaarbaar verschil."
+        },
+        {
+          "roll": 42,
+          "result": "Een groep straatkinderen speelt havenwacht en smokkelaars na."
+        },
+        {
+          "roll": 43,
+          "result": "Een touw knapt bij het hijsen; een vrachtkist slingert gevaarlijk boven de straat."
+        },
+        {
+          "roll": 44,
+          "result": "Een zieke zeeman hoest hevig en houdt een verzegelde brief stevig vast."
+        },
+        {
+          "roll": 45,
+          "result": "Een visser toont een vreemde beetafdruk in de romp van zijn sloep."
+        },
+        {
+          "roll": 46,
+          "result": "Twee bekenden groeten elkaar hartelijk, maar stoppen meteen met praten zodra een wacht nadert."
+        },
+        {
+          "roll": 47,
+          "result": "Een kaartverkoper biedt een bijgewerkte plattegrond met een onlangs afgesloten steeg."
+        },
+        {
+          "roll": 48,
+          "result": "Een verdwaald kind weet alleen de naam van een schip waar zijn ouders werken."
+        },
+        {
+          "roll": 49,
+          "result": "Een herbergier gooit een lastige gast buiten, samen met een identieke tweede jas."
+        },
+        {
+          "roll": 50,
+          "result": "Een kist breekt open en tientallen levende krabben stromen over de keien."
+        },
+        {
+          "roll": 51,
+          "result": "Een groep sjouwers beticht een collega van het doorspelen van hun rooster."
+        },
+        {
+          "roll": 52,
+          "result": "Een stille figuur koopt alle oude scheepslogboeken op de markt."
+        },
+        {
+          "roll": 53,
+          "result": "Een echtpaar viert zijn verloving met goedkope wijn voor voorbijgangers."
+        },
+        {
+          "roll": 54,
+          "result": "Een onbekende laat een munt vallen met een ongebruikelijk muntteken."
+        },
+        {
+          "roll": 55,
+          "result": "Een handelaar probeert een nieuwsgierige toeschouwer om te kopen om te zwijgen."
+        },
+        {
+          "roll": 56,
+          "result": "Een wacht arresteert een schreeuwende man die beweert dat hij juist de bestolene is."
+        },
+        {
+          "roll": 57,
+          "result": "Een uitgeputte boodschapper heeft een brief afgeleverd aan het verkeerde adres."
+        },
+        {
+          "roll": 58,
+          "result": "Een groep jonge matrozen wedt wie het langst in het koude havenwater blijft."
+        },
+        {
+          "roll": 59,
+          "result": "Een vrouw beweert haar overleden echtgenoot aan boord van een passerend schip te hebben gezien."
+        },
+        {
+          "roll": 60,
+          "result": "Een ruiter draagt een kistje dat bij iedere hobbel zacht rinkelt."
+        },
+        {
+          "roll": 61,
+          "result": "Twee havenbendes eisen allebei 'beschermingsgeld' van dezelfde kleine winkel."
+        },
+        {
+          "roll": 62,
+          "result": "Een koopman fluistert dat een douanier alleen steekpenningen in buitenlandse munten aanneemt."
+        },
+        {
+          "roll": 63,
+          "result": "Een kleine brand ontstaat bij een touwslagerij; de waterput blijkt leeg."
+        },
+        {
+          "roll": 64,
+          "result": "Een straatprediker kondigt een storm aan ondanks de helderblauwe lucht."
+        },
+        {
+          "roll": 65,
+          "result": "Een gewonde duif draagt een bericht met slechts een halve zin."
+        },
+        {
+          "roll": 66,
+          "result": "Een verdacht verzegeld vat rolt onbeheerd van een wagen richting de kade."
+        },
+        {
+          "roll": 67,
+          "result": "Een knecht verbergt blauwe plekken en wil niet zeggen voor wie hij werkt."
+        },
+        {
+          "roll": 68,
+          "result": "Een stel geliefden vraagt de groep als getuige voor een overhaast huwelijk."
+        },
+        {
+          "roll": 69,
+          "result": "Een roofzuchtige meeuw grist een belangrijk document uit iemands hand."
+        },
+        {
+          "roll": 70,
+          "result": "Een bewoner ontdekt dat er 's nachts een tweede slot op zijn deur is gezet."
+        },
+        {
+          "roll": 71,
+          "result": "Een kadejongen heeft een vijandige kat vast die een zilveren halsband draagt."
+        },
+        {
+          "roll": 72,
+          "result": "Een slecht vermomde edelman probeert brood te kopen zonder herkend te worden."
+        },
+        {
+          "roll": 73,
+          "result": "Een dronken man biedt een 'echte schatkaart' aan voor de prijs van een maaltijd."
+        },
+        {
+          "roll": 74,
+          "result": "Een verlaten kruiwagen bevat verse modder en een enkele bloedige handschoen."
+        },
+        {
+          "roll": 75,
+          "result": "Een havenwerker vindt in een lading graan een zorgvuldig dichtgebonden pop."
+        },
+        {
+          "roll": 76,
+          "result": "Een kleine optocht draagt een lege doodskist naar het water."
+        },
+        {
+          "roll": 77,
+          "result": "Een kaartspeler beschuldigt een ander van vals spel; de omstanders kiezen partij."
+        },
+        {
+          "roll": 78,
+          "result": "Een jonge monnik verzamelt namen van vermiste zeelieden."
+        },
+        {
+          "roll": 79,
+          "result": "Een koopvrouw smeekt de groep om te getuigen tegen een afperser."
+        },
+        {
+          "roll": 80,
+          "result": "Een visser verkoopt een fles met zand dat in het donker zacht licht geeft."
+        },
+        {
+          "roll": 81,
+          "result": "Een groep bewoners blokkeert de weg van een rijke koopman vanwege onbetaalde schulden."
+        },
+        {
+          "roll": 82,
+          "result": "Een lantaarnopsteker ontdekt een vers gecodeerd teken op zijn ladder."
+        },
+        {
+          "roll": 83,
+          "result": "Een douanebeambte achtervolgt een koerier die opvallend niet probeert te ontsnappen."
+        },
+        {
+          "roll": 84,
+          "result": "Een vrouw hoort haar eigen stem roepen vanuit een leegstaand pakhuis."
+        },
+        {
+          "roll": 85,
+          "result": "Een drager laat een waardevol pakket vallen en vlucht zonder het op te rapen."
+        },
+        {
+          "roll": 86,
+          "result": "Een kroegbaas biedt gratis soep aan iedereen die een verdwenen kok vindt."
+        },
+        {
+          "roll": 87,
+          "result": "Een geschrokken paard weigert langs een bepaalde scheepskist te lopen."
+        },
+        {
+          "roll": 88,
+          "result": "Een schipper biedt werk aan voor één nacht, maar weigert de bestemming te noemen."
+        },
+        {
+          "roll": 89,
+          "result": "Een kleine jongen doet een perfecte imitatie van de stem van de havenkapitein."
+        },
+        {
+          "roll": 90,
+          "result": "Een slaperige wacht wordt wakker wanneer een schip zonder lichten aanmeert."
+        },
+        {
+          "roll": 91,
+          "result": "Een smokkelaar probeert per ongeluk een van de personages als contactpersoon aan te spreken."
+        },
+        {
+          "roll": 92,
+          "result": "Een twist tussen twee touwslagers wordt plots onderbroken door een instortende stelling."
+        },
+        {
+          "roll": 93,
+          "result": "Een bordeelhoudster waarschuwt stilletjes voor een man die 's nachts meisjes lastigvalt."
+        },
+        {
+          "roll": 94,
+          "result": "Een oude matroos herkent een tatoeage op een vreemdeling en verbleekt."
+        },
+        {
+          "roll": 95,
+          "result": "Een marktkoopman beweert dat zijn weegschaal betoverd is en alle munten lichter maakt."
+        },
+        {
+          "roll": 96,
+          "result": "Een afperser eist geld van een visverkoopster terwijl haar kinderen toekijken."
+        },
+        {
+          "roll": 97,
+          "result": "Een wacht laat een ogenschijnlijk onschuldige straatartiest arresteren zonder uitleg."
+        },
+        {
+          "roll": 98,
+          "result": "Een koppel vlucht hand in hand voor een groep bewakers, nog in bruiloftskleding."
+        },
+        {
+          "roll": 99,
+          "result": "Een anonieme getuige stopt een briefje in de hand van een personage: 'Niet naar de kade vanavond.'"
+        },
+        {
+          "roll": 100,
+          "result": "Onder een losliggende straatsteen ligt een kleine beurs met buitenlandse munten en een naam."
+        }
+      ]
     }
   ]
 }
