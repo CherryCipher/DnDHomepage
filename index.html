@@ -7,6 +7,7 @@
   <title>Dungeon Master's Toolkit</title>
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
+  <script src="battle-tools.js" defer></script>
 </head>
 <body>
   <div class="app-shell">
@@ -19,12 +20,31 @@
       </div>
     </header>
 
-    <nav class="tabs" aria-label="Main navigation">
-      <button class="tab is-active" id="tab-soundboard" type="button" aria-selected="true" aria-controls="panel-soundboard" role="tab">♫ &nbsp; Soundboard</button>
+    <nav class="tabs" role="tablist" aria-label="Main navigation">
+      <button class="tab is-active" id="tab-battle-tools" type="button" aria-selected="true" aria-controls="panel-battle-tools" role="tab">⚔ &nbsp; Battle Tools</button>
+      <button class="tab" id="tab-soundboard" type="button" aria-selected="false" aria-controls="panel-soundboard" role="tab">♫ &nbsp; Soundboard</button>
       <button class="tab" id="tab-tables" type="button" aria-selected="false" aria-controls="panel-tables" role="tab">⚄ &nbsp; Random Tables</button>
     </nav>
 
     <main>
+      <section id="panel-battle-tools" class="tab-panel" role="tabpanel" aria-labelledby="tab-battle-tools">
+        <div class="section-heading"><div><p class="eyebrow">CONTROL THE ENCOUNTER</p><h2>Initiative Tracker</h2></div><span class="section-decoration" aria-hidden="true">✧ ━ ✧</span></div>
+        <div class="initiative-panel">
+          <form id="initiative-form" class="initiative-form">
+            <label for="initiative-name">Name</label>
+            <input id="initiative-name" type="text" maxlength="80" placeholder="Character or monster name" autocomplete="off" required>
+            <label for="initiative-start-hp">HP</label>
+            <input id="initiative-start-hp" type="number" step="1" value="10" aria-label="Starting HP" required>
+            <button class="initiative-add" type="submit">+ Add to initiative</button>
+          </form>
+          <div class="initiative-list-header"><h3>Turn Order <span id="initiative-count"></span></h3><p>Drag the handle to change the order. HP can be edited directly.</p></div>
+          <ol id="initiative-list" class="initiative-list" aria-label="Initiative turn order"></ol>
+          <p id="initiative-empty" class="initiative-empty">No combatants yet. Add a character or monster above.</p>
+          <p class="initiative-note">Stored locally in this browser. Reordering or changing HP saves automatically.</p>
+          <p id="initiative-message" class="message" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
       <section id="panel-soundboard" class="tab-panel" role="tabpanel" aria-labelledby="tab-soundboard">
         <section class="music-section" aria-labelledby="music-heading">
           <div class="section-heading">
