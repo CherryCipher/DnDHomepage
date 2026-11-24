@@ -97,12 +97,35 @@ function crossfade(durationMs) {
   fadeFrame = requestAnimationFrame(step);
 }
 
+// Each sound may declare either a single "file" or a "files" array.
+function soundFiles(sound) {
+  const candidates = Array.isArray(sound.files) ? sound.files : [sound.file];
+  return candidates.filter(file => typeof file === "string" &&
+    file.startsWith("data/soundboard/") && !file.includes(".."));
+}
+
+function randomSoundFile(sound, excludeFile = null) {
+  const candidates = soundFiles(sound);
+  if (!candidates.length) return null;
+  // When re-clicking a playing music button, prefer a different variation.
+  const choices = candidates.length > 1 && excludeFile
+    ? candidates.filter(file => file !== excludeFile)
+    : candidates;
+  const pool = choices.length ? choices : candidates;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
 async function playMusic(track) {
   showMessage("soundboard-message");
-  if (activeMusic?.track.id === track.id) {
-    if (paused) await togglePause();
+  if (activeMusic?.track.id === track.id && paused) {
+    await togglePause();
     return;
   }
+
+  const selectedFile = randomSoundFile(track, activeMusic?.track.id === track.id ? activeMusic.file : null);
+  if (!selectedFile) return;
+  // One-clip buttons already playing keep their track running.
+  if (activeMusic?.track.id === track.id && selectedFile === activeMusic.file) return;
 
   const requestId = ++transitionId;
   // A fast second click interrupts an earlier transition, retaining the
@@ -115,17 +138,17 @@ async function playMusic(track) {
     applyMusicVolume();
   }
   const previous = activeMusic;
-  const audio = new Audio(track.file);
+  const audio = new Audio(selectedFile);
   audio.loop = true;
   audio.preload = "auto";
   audio.volume = 0;
-  const incoming = { audio, track, gain: 0 };
+  const incoming = { audio, track, file: selectedFile, gain: 0 };
   try {
     await audio.play();
   } catch {
     discardPlayer(incoming);
     if (requestId === transitionId) {
-      showMessage("soundboard-message", "Could not load “" + track.name + "”. Check " + track.file);
+      showMessage("soundboard-message", "Could not load “" + track.name + "”. Check " + selectedFile);
       updatePlayer();
     }
     return;
@@ -167,7 +190,9 @@ async function togglePause() {
 
 function playSfx(effect, button) {
   showMessage("soundboard-message");
-  const audio = new Audio(effect.file);
+  const selectedFile = randomSoundFile(effect);
+  if (!selectedFile) return;
+  const audio = new Audio(selectedFile);
   audio.volume = byId("sfx-volume").value / 100;
   activeEffects.add(audio);
   button.classList.add("is-triggered");
@@ -179,7 +204,7 @@ function playSfx(effect, button) {
   }
   function onError() {
     cleanup();
-    showMessage("soundboard-message", "Could not load “" + effect.name + "”. Add its audio file at " + effect.file);
+    showMessage("soundboard-message", "Could not load “" + effect.name + "”. Add its audio file at " + selectedFile);
   }
   audio.addEventListener("ended", cleanup);
   audio.addEventListener("error", onError);
@@ -206,7 +231,7 @@ function createSoundButton(item, kind) {
 }
 
 function validSounds(items) {
-  return Array.isArray(items) ? items.filter(item => item && typeof item.id === "string" && typeof item.name === "string" && typeof item.file === "string" && item.file.startsWith("data/soundboard/") && !item.file.includes("..")) : [];
+  return Array.isArray(items) ? items.filter(item => item && typeof item.id === "string" && typeof item.name === "string" && soundFiles(item).length > 0) : [];
 }
 
 async function loadSoundboard() {
