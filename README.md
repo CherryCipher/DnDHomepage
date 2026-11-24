@@ -27,6 +27,25 @@ Do **not** open `index.html` directly using `file://`: browsers block loading th
 }
 ```
 
+### Random audio variations
+
+A button can refer to a single audio file using `"file"`, or to multiple variants using `"files"`. Every click picks a random file. Use the same format for **music** and **SFX**:
+
+```json
+{
+  "id": "fireball",
+  "name": "Fireball",
+  "category": "battle",
+  "files": [
+    "data/soundboard/sfx/Fireball 1.wav",
+    "data/soundboard/sfx/Fireball 2.wav",
+    "data/soundboard/sfx/Fireball 3.wav"
+  ]
+}
+```
+
+The example assumes you have all three audio files in that folder. The label remains **Fireball** regardless of which file is chosen. SFX plays once per click (with overlapping sounds allowed). Music loops its selected file and crossfades to another track; clicking the same music button again selects a new variant if more than one is configured, preferably avoiding the currently playing one. `"file"` remains fully supported for older entries. The repository includes one-item `"files"` examples; add more paths when you have the audio.
+
 Music displays full-width above two side-by-side sound-effect panels: Battle SFX and General SFX. Add `"category": "battle"` or `"category": "general"` to each object in the `sfx` array; missing categories default to General SFX. No separate sound folders are necessary.\n\nMusic loops until stopped or another track is selected. Switching tracks plays both simultaneously during an equal-power crossfade (default 4 seconds). Choose Off, 1, 2, 4, 6, 8 or 12 seconds in the music player. Pause and Stop remain immediate. Sound FX play once and can overlap, including while music plays. Track names shown on the buttons come from JSON. The included entries are **examples only**: place actual audio files with matching names into the folders, or replace their JSON entries. No audio files are bundled.
 
 ## Add random tables
