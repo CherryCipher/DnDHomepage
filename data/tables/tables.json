@@ -2,69 +2,69 @@
   "tables": [
     {
       "id": "tavern-encounters",
-      "name": "Tavern Encounters",
-      "description": "A little trouble, mystery, or unexpected company in the local tavern.",
+      "name": "Hempstead — Taveerneontmoetingen (d12)",
+      "description": "Twaalf scènes in echte herbergen en wijken van Hempstead. De ontmoetingen zijn nieuwe, mogelijke avontuursituaties gebaseerd op de wiki.",
       "die": "1d12",
       "rows": [
         {
           "roll": 1,
-          "result": "A hooded stranger quietly pays for the party's drinks."
+          "result": "In De Zoutmast betaalt een schipper alle drankjes, mits niemand naar zijn vermiste bemanning vraagt."
         },
         {
           "roll": 2,
-          "result": "Two merchants argue loudly over a missing shipment."
+          "result": "Een pot Hemmen in de Stormhaak Taveerne loopt uit op een knokpartij; de verliezer fluistert over de Rookhand."
         },
         {
           "roll": 3,
-          "result": "A bard sings a song that mentions one of the characters by name."
+          "result": "Brohm Gullharbor gooit een afperser uit De Zoutmast. De man zweert dat morgen een havenkraam zal branden."
         },
         {
           "roll": 4,
-          "result": "Someone slips a sealed letter under the party's table."
+          "result": "Een Riverguard-wachter vraagt in De Gouden Slak naar een scheepslogboek dat onlangs is gestolen."
         },
         {
           "roll": 5,
-          "result": "A heavily armored knight asks for directions to a ruined temple."
+          "result": "Een student uit het Arcanum Quarter laat zijn bier zweven; in het schuim verschijnt een schets van Gutterfall."
         },
         {
           "roll": 6,
-          "result": "The innkeeper discovers a strange symbol burned into the bar."
+          "result": "Een handelaar aan Marrow Market biedt goud voor een Havenmees die een waardevolle ring heeft gestolen."
         },
         {
           "roll": 7,
-          "result": "A nervous traveler claims to have seen a dragon nearby."
+          "result": "Een smid uit Forgeward zoekt iemand die een afgesloten krat vóór dageraad naar De Slagader vervoert."
         },
         {
           "roll": 8,
-          "result": "A local gambler challenges a character to a game of chance."
+          "result": "Een boodschapper van de Wachters van de Vlam zoekt getuigen van een ontvoering bij de Sancta Ignis Basiliek."
         },
         {
           "roll": 9,
-          "result": "The tavern lights flicker, although there is no wind."
+          "result": "Een visser zegt dat de Scarlet Beacon gisteren een vreemd ritme pulseerde. Niemand gelooft hem."
         },
         {
           "roll": 10,
-          "result": "A small creature steals food and vanishes through a hole in the wall."
+          "result": "Een bard uit Theatrium herkent in een kroeglied een boodschap over een oude verdwijning."
         },
         {
           "roll": 11,
-          "result": "A messenger arrives with news of a missing caravan."
+          "result": "Een dwarven schipper in de Stormhaak zet een pakhuissleutel in bij een pot Hemmen."
         },
         {
           "roll": 12,
-          "result": "An old adventurer offers to trade a map for a favor."
+          "result": "Mirsel Vinelace vindt in De Gouden Slak een uitnodiging voor een geheime bijeenkomst rond het Zilveren Comité."
         }
       ]
     },
     {
       "id": "hempstead-havenlading",
       "name": "Hempstead — Havenlading & Scheepsgoederen (d100)",
-      "description": "Wat vinden de avonturiers in een scheepsruim, tussen vracht of op de kade? Precies 20 van de 100 resultaten zijn gestolen, bijzonder of gevaarlijk en staan herkenbaar tussen haakjes. De concrete details zijn nieuwe DM-invulling, geen bevestigde wiki-lore.",
+      "description": "100 vondsten aan boord van schepen in de Grote Haven en op de Zilverstroom, bestemd voor Marrow Market, Forgeward en andere wijken. Precies 20 resultaten zijn gestolen, gevaarlijk of speciaal; de concrete vondsten zijn DM-invulling.",
       "die": "1d100",
       "rows": [
         {
           "roll": 1,
-          "result": "Vaten gezouten haring, bestemd voor de wintervoorraad van de stad."
+          "result": "Vaten gezouten Zilverstroomvis, bestemd voor de kramen op Marrow Market."
         },
         {
           "roll": 2,
@@ -72,7 +72,7 @@
         },
         {
           "roll": 3,
-          "result": "Zakken grof zeezout uit de kustpannen."
+          "result": "Zakken zeezout voor havenkeukens en De Zoutmast."
         },
         {
           "roll": 4,
@@ -84,7 +84,7 @@
         },
         {
           "roll": 6,
-          "result": "Balen wol met het merk van een binnenlandse spinnerij."
+          "result": "Eiken planken voor dwarven scheepsbouwers in de Grote Haven."
         },
         {
           "roll": 7,
@@ -96,11 +96,11 @@
         },
         {
           "roll": 9,
-          "result": "Vaten pek voor het dichten van scheepsnaden."
+          "result": "Bundels henneptouw bestemd voor de Touwbrug Steiger."
         },
         {
           "roll": 10,
-          "result": "[Gevaarlijk] Een gebarsten vat bijtend alchemistisch zuur; de bodem van de kist sist."
+          "result": "[Gestolen] Zilveren kelken met het merkteken van een Oldstone-herberg, verborgen onder aardewerk."
         },
         {
           "roll": 11,
@@ -108,7 +108,7 @@
         },
         {
           "roll": 12,
-          "result": "Kisten ijzeren spijkers en klinknagels."
+          "result": "Vaten pek voor de reparatie van een Riverguard-patrouilleschip."
         },
         {
           "roll": 13,
@@ -120,7 +120,7 @@
         },
         {
           "roll": 15,
-          "result": "[Speciaal] Een hermetisch gesloten kist met een kaart van onbekende zeestromingen."
+          "result": "[Gevaarlijk] Lekkende vaten alchemistisch zuur voor een Arcanum-laboratorium."
         },
         {
           "roll": 16,
@@ -140,7 +140,7 @@
         },
         {
           "roll": 20,
-          "result": "[Gestolen] Juwelen in een zak meel; een recent uitgescheurde inventarislijst ligt erbij."
+          "result": "[Speciaal] Een scheepskaart met een onbekende doorgang tussen de Zilverstroom en De Marrow."
         },
         {
           "roll": 21,
@@ -160,7 +160,7 @@
         },
         {
           "roll": 25,
-          "result": "[Gevaarlijk] Flacons met onstabiel vuurpoeder, gemerkt met een waarschuwingssymbool."
+          "result": "[Gestolen] Kostbare juwelen met de familiekleuren van een huis uit Highcourt."
         },
         {
           "roll": 26,
@@ -180,7 +180,7 @@
         },
         {
           "roll": 30,
-          "result": "[Speciaal] Een intact scheepslogboek van een schip dat jaren geleden vermist raakte."
+          "result": "[Gevaarlijk] Onstabiel vuurpoeder, onderweg naar een smidse in Forgeward."
         },
         {
           "roll": 31,
@@ -200,7 +200,7 @@
         },
         {
           "roll": 35,
-          "result": "[Gestolen] Een partij uniformen en zegelringen van de havenwacht."
+          "result": "[Speciaal] Een intact scheepslogboek van een schip dat ooit bij de Scarlet Beacon verdween."
         },
         {
           "roll": 36,
@@ -220,7 +220,7 @@
         },
         {
           "roll": 40,
-          "result": "[Gevaarlijk] Een krat met levend giftig ongedierte dat zich door het hout knaagt."
+          "result": "[Gestolen] Riverguard-uniformen en insignes, verstopt onder gewone werkjassen."
         },
         {
           "roll": 41,
@@ -240,7 +240,7 @@
         },
         {
           "roll": 45,
-          "result": "[Speciaal] Een kleine verzegelde koker met een magisch licht dat nooit dooft."
+          "result": "[Gevaarlijk] Kooien met giftige dieren, bestemd voor een onbekende koper uit Highcourt."
         },
         {
           "roll": 46,
@@ -260,7 +260,7 @@
         },
         {
           "roll": 50,
-          "result": "[Gestolen] Een kostbaar beeld uit een tempel, haastig in teerdoek gewikkeld."
+          "result": "[Gestolen] Een votiefbeeld dat uit een kapel van de Wachters van de Vlam lijkt te komen."
         },
         {
           "roll": 51,
@@ -280,7 +280,7 @@
         },
         {
           "roll": 55,
-          "result": "[Gevaarlijk] Flessen met besmettelijk ogende schimmel; op de kist staat QUARANTAINE."
+          "result": "[Gevaarlijk] Potten schimmel uit een verlaten Gutterfall-kelder, met het opschrift QUARANTAINE."
         },
         {
           "roll": 56,
@@ -300,7 +300,7 @@
         },
         {
           "roll": 60,
-          "result": "[Speciaal] Een verzegelde brief met een onbekend koninklijk of adellijk zegel."
+          "result": "[Speciaal] Een geheime brief met een waszegel dat op dat van het Zilveren Comité lijkt."
         },
         {
           "roll": 61,
@@ -320,7 +320,7 @@
         },
         {
           "roll": 65,
-          "result": "[Gestolen] Gemerkte goudstaven onder een laag steenkool; de stempels zijn beschadigd."
+          "result": "[Gestolen] Goudstaven verborgen onder Forgeward-steenkool; de herkomststempels zijn weggevijld."
         },
         {
           "roll": 66,
@@ -340,7 +340,7 @@
         },
         {
           "roll": 70,
-          "result": "[Gevaarlijk] Een kooi met een agressief roofdier dat voortdurend tegen het slot beukt."
+          "result": "[Gevaarlijk] Een agressief roofdier dat onder verdoving naar de Grote Haven wordt vervoerd."
         },
         {
           "roll": 71,
@@ -360,7 +360,7 @@
         },
         {
           "roll": 75,
-          "result": "[Speciaal] Een kist zeldzame edelstenen, vergezeld van een vervalst handelscertificaat."
+          "result": "[Speciaal] Edelstenen met een verdacht handelscertificaat, bestemd voor Marrow Market."
         },
         {
           "roll": 76,
@@ -380,7 +380,7 @@
         },
         {
           "roll": 80,
-          "result": "[Gestolen] Kostbare schilderijen waarvan de kaders met verse verf zijn overschilderd."
+          "result": "[Gestolen] Schilderijen uit Highcourt, verborgen tussen theaterdecors voor het Grand Aurelius Theater."
         },
         {
           "roll": 81,
@@ -400,7 +400,7 @@
         },
         {
           "roll": 85,
-          "result": "[Gevaarlijk] Een metalen cilinder die hoorbaar tikt en onnatuurlijk koud aanvoelt."
+          "result": "[Gevaarlijk] Een tikkende metalen cilinder uit een Forgeward-werkplaats, ijskoud bij aanraking."
         },
         {
           "roll": 86,
@@ -420,7 +420,7 @@
         },
         {
           "roll": 90,
-          "result": "[Speciaal] Een zorgvuldig ingepakte oud-religieuze reliek met een onleesbare inscriptie."
+          "result": "[Speciaal] Een reliek met symbolen uit de Stichtersoorlogen, bestemd voor Oldstone."
         },
         {
           "roll": 91,
@@ -440,7 +440,7 @@
         },
         {
           "roll": 95,
-          "result": "[Gestolen] Een zak met recent geslagen munten en een verdwenen muntmeestersstempel."
+          "result": "[Gestolen] Een zak recent geslagen munten en het stempel van een verdwenen muntmeester."
         },
         {
           "roll": 96,
@@ -460,27 +460,27 @@
         },
         {
           "roll": 100,
-          "result": "[Gevaarlijk] Een lekke kist met bedwelmende sporen; de dragers worden duizelig."
+          "result": "[Gevaarlijk] Bedwelmende sporen in een lekke kist die via Gutterfall moet worden gelost."
         }
       ]
     },
     {
       "id": "hempstead-straatgebeurtenissen",
       "name": "Hempstead — Straatgebeurtenissen (d100)",
-      "description": "100 korte scènes voor stegen, markten, pakhuizen en drukke kades: van alledaags havenleven tot conflicten, geheimen, ooggetuigen en verhaakhaken. Nieuwe DM-invulling, nog niet gecontroleerd tegen de Hempstead-wiki.",
+      "description": "100 dagelijkse en spannende scènes in de bestaande wijken van Hempstead. Locaties en organisaties komen uit de wiki; gebeurtenissen zijn nieuwe DM-suggesties.",
       "die": "1d100",
       "rows": [
         {
           "roll": 1,
-          "result": "Een havenarbeider valt flauw onder een te zware baal; niemand wil zijn loon missen."
+          "result": "Een dokwerker bezwijkt onder een zware baal in de Grote Haven; zijn collega's durven hun werk niet te onderbreken."
         },
         {
           "roll": 2,
-          "result": "Twee matrozen vechten om een onbetaalde dobbelweddenschap."
+          "result": "Twee matrozen vechten buiten de Stormhaak Taveerne om een verloren pot Hemmen."
         },
         {
           "roll": 3,
-          "result": "Een stel zoent achter een stapel viskisten en schrikt als iemand nadert."
+          "result": "Bij de Touwbrug Steiger kust een stel heimelijk achter de viskisten."
         },
         {
           "roll": 4,
@@ -488,7 +488,7 @@
         },
         {
           "roll": 5,
-          "result": "Een koerier verliest een envelop met het zegel van een handelshuis."
+          "result": "Een koerier verliest op Marrow Market een brief met het zegel van het Zilveren Comité."
         },
         {
           "roll": 6,
@@ -500,7 +500,7 @@
         },
         {
           "roll": 8,
-          "result": "Een dronken bootsman zingt luid een lied over een gezonken schip."
+          "result": "Een dronken schipper in De Zoutmast zingt over een schip dat volgens hem door de Scarlet Beacon werd verraden."
         },
         {
           "roll": 9,
@@ -508,11 +508,11 @@
         },
         {
           "roll": 10,
-          "result": "Een wagen met kolen blokkeert een smalle straat; de bestuurder is verdwenen."
+          "result": "Een wagen met Forgeward-steenkool blokkeert De Slagader; de voerman is verdwenen."
         },
         {
           "roll": 11,
-          "result": "Een havenwachter ondervraagt een schipper over ontbrekende vrachtpapieren."
+          "result": "Een Riverguard-patrouille controleert vrachtbrieven aan de Zilverstroom; een koopman slaat op de vlucht."
         },
         {
           "roll": 12,
@@ -520,7 +520,7 @@
         },
         {
           "roll": 13,
-          "result": "Een zwerver wijst zwijgend naar een raam op de derde verdieping."
+          "result": "Een zwerver in een steeg van Oldstone wijst naar een raam waar iedere nacht hetzelfde licht brandt."
         },
         {
           "roll": 14,
@@ -532,11 +532,11 @@
         },
         {
           "roll": 16,
-          "result": "Een scheepsjongen smeekt om hulp bij het terugvinden van zijn kapitein."
+          "result": "Een scheepsjongen in de Grote Haven zoekt zijn kapitein die bij de Scarlet Beacon verdween."
         },
         {
           "roll": 17,
-          "result": "Een groep sjouwers staakt: hun loon is voor de derde week te laat."
+          "result": "Sjouwers van Forgeward staken omdat de Gildekring hun loonklachten niet hoort."
         },
         {
           "roll": 18,
@@ -544,7 +544,7 @@
         },
         {
           "roll": 19,
-          "result": "Een hond blaft tegen een dichtgetimmerde kelderdeur waarbinnen iets schuift."
+          "result": "Een hond blaft naar een dichtgemetselde kelder in Oldstone; van binnen klinkt gekras."
         },
         {
           "roll": 20,
@@ -552,7 +552,7 @@
         },
         {
           "roll": 21,
-          "result": "Een wagen vol verse bloemen rijdt naar een schip dat vandaag zou vertrekken."
+          "result": "Een visser vindt een zilveren ring in een nest van een Havenmees."
         },
         {
           "roll": 22,
@@ -564,7 +564,7 @@
         },
         {
           "roll": 24,
-          "result": "Een dobbelaar biedt een spel aan waarbij de inzet een verhaal is, geen geld."
+          "result": "Een Hemmen-speler in de Stormhaak zet informatie over Gutterfall in."
         },
         {
           "roll": 25,
@@ -576,7 +576,7 @@
         },
         {
           "roll": 27,
-          "result": "Een boodschapper roept dat de volgende veerboot wegens mist niet vertrekt."
+          "result": "Op Marrow Market wordt omgeroepen dat een schuit op De Marrow spoorloos verdwenen is."
         },
         {
           "roll": 28,
@@ -584,15 +584,15 @@
         },
         {
           "roll": 29,
-          "result": "Een wachtpost kijkt weg terwijl een ongemerkte kar door de poort rijdt."
+          "result": "Een Riverguard kijkt weg wanneer een ongemerkte kar naar Highcourt rijdt."
         },
         {
           "roll": 30,
-          "result": "Een straatmuzikant speelt dezelfde vier noten telkens als een koopman passeert."
+          "result": "Een straatmuzikant in Theatrium speelt vier vreemde noten wanneer een theaterbode passeert."
         },
         {
           "roll": 31,
-          "result": "Een jonge visser showt een schelp waar een zacht gefluister uit klinkt."
+          "result": "Lampzwaluwen cirkelen rond een flikkerende levitatielantaarn in Arcanum Quarter."
         },
         {
           "roll": 32,
@@ -608,7 +608,7 @@
         },
         {
           "roll": 35,
-          "result": "Een schoonmaker veegt bloedsporen weg vóór iemand vragen kan stellen."
+          "result": "Een Forgeward-smid veegt een bloedspoor van zijn wagen en beweert dat het roest is."
         },
         {
           "roll": 36,
@@ -616,7 +616,7 @@
         },
         {
           "roll": 37,
-          "result": "Een reiziger vraagt naar een straat die op geen enkel stadsplan staat."
+          "result": "Een vreemdeling zoekt in Oldstone een straat die niet meer op de kaart staat."
         },
         {
           "roll": 38,
@@ -628,7 +628,7 @@
         },
         {
           "roll": 40,
-          "result": "Een dame in rouw zoekt iemand die haar broer op de kade heeft gezien."
+          "result": "Een vrouw in rouw vraagt in De Gouden Slak naar een schip uit de koninklijke haven."
         },
         {
           "roll": 41,
@@ -640,7 +640,7 @@
         },
         {
           "roll": 43,
-          "result": "Een touw knapt bij het hijsen; een vrachtkist slingert gevaarlijk boven de straat."
+          "result": "Een hijskraan bij De Slagader breekt; een lading metaal slingert boven de passanten."
         },
         {
           "roll": 44,
@@ -660,7 +660,7 @@
         },
         {
           "roll": 48,
-          "result": "Een verdwaald kind weet alleen de naam van een schip waar zijn ouders werken."
+          "result": "Een verdwaald kind op Marrow Market weet alleen op welk schip zijn ouders werken."
         },
         {
           "roll": 49,
@@ -668,7 +668,7 @@
         },
         {
           "roll": 50,
-          "result": "Een kist breekt open en tientallen levende krabben stromen over de keien."
+          "result": "Op de Marrow-kade breekt een vat open; levende krabben rennen over de markt."
         },
         {
           "roll": 51,
@@ -684,7 +684,7 @@
         },
         {
           "roll": 54,
-          "result": "Een onbekende laat een munt vallen met een ongebruikelijk muntteken."
+          "result": "Een oud muntstuk uit de tijd van de Stichtersoorlogen rolt over een Oldstone-plein."
         },
         {
           "roll": 55,
@@ -692,7 +692,7 @@
         },
         {
           "roll": 56,
-          "result": "Een wacht arresteert een schreeuwende man die beweert dat hij juist de bestolene is."
+          "result": "Een Riverguard arresteert iemand die beweert zelf door afpersers bedreigd te worden."
         },
         {
           "roll": 57,
@@ -712,7 +712,7 @@
         },
         {
           "roll": 61,
-          "result": "Twee havenbendes eisen allebei 'beschermingsgeld' van dezelfde kleine winkel."
+          "result": "Twee kleine havenbendes eisen beschermgeld van dezelfde winkel; beide wijzen naar een onbekende baas."
         },
         {
           "roll": 62,
@@ -720,7 +720,7 @@
         },
         {
           "roll": 63,
-          "result": "Een kleine brand ontstaat bij een touwslagerij; de waterput blijkt leeg."
+          "result": "Een touwmagazijn in de Grote Haven vliegt in brand en de waterput blijkt afgesloten."
         },
         {
           "roll": 64,
@@ -728,7 +728,7 @@
         },
         {
           "roll": 65,
-          "result": "Een gewonde duif draagt een bericht met slechts een halve zin."
+          "result": "Een gewonde Havenmees heeft een half verscheurd briefje aan een poot."
         },
         {
           "roll": 66,
@@ -740,7 +740,7 @@
         },
         {
           "roll": 68,
-          "result": "Een stel geliefden vraagt de groep als getuige voor een overhaast huwelijk."
+          "result": "Een stel zoekt bescherming bij de Sancta Ignis Basiliek en weigert te zeggen voor wie ze vluchten."
         },
         {
           "roll": 69,
@@ -756,7 +756,7 @@
         },
         {
           "roll": 72,
-          "result": "Een slecht vermomde edelman probeert brood te kopen zonder herkend te worden."
+          "result": "Een edelman uit Highcourt onderhandelt in een achtersteeg bij Marrow Market met een informant."
         },
         {
           "roll": 73,
@@ -780,7 +780,7 @@
         },
         {
           "roll": 78,
-          "result": "Een jonge monnik verzamelt namen van vermiste zeelieden."
+          "result": "Een Wachter van de Vlam verzamelt namen van zeelieden die niet zijn teruggekeerd."
         },
         {
           "roll": 79,
@@ -796,7 +796,7 @@
         },
         {
           "roll": 82,
-          "result": "Een lantaarnopsteker ontdekt een vers gecodeerd teken op zijn ladder."
+          "result": "Een lantaarnopsteker in Oldstone ontdekt bij ieder licht dezelfde verse krijtmarkering."
         },
         {
           "roll": 83,
@@ -804,7 +804,7 @@
         },
         {
           "roll": 84,
-          "result": "Een vrouw hoort haar eigen stem roepen vanuit een leegstaand pakhuis."
+          "result": "Uit een dichtgetimmerd havenpakhuis klinkt de stem van een vrouw die buiten op straat staat."
         },
         {
           "roll": 85,
@@ -828,7 +828,7 @@
         },
         {
           "roll": 90,
-          "result": "Een slaperige wacht wordt wakker wanneer een schip zonder lichten aanmeert."
+          "result": "Een Riverguard ziet een schip zonder lichten vlak onder de Scarlet Beacon binnenvaren."
         },
         {
           "roll": 91,
@@ -844,7 +844,7 @@
         },
         {
           "roll": 94,
-          "result": "Een oude matroos herkent een tatoeage op een vreemdeling en verbleekt."
+          "result": "Een oude matroos in de Stormhaak verbleekt bij het zien van een bepaalde tatoeage."
         },
         {
           "roll": 95,
@@ -860,7 +860,7 @@
         },
         {
           "roll": 98,
-          "result": "Een koppel vlucht hand in hand voor een groep bewakers, nog in bruiloftskleding."
+          "result": "Een stel in bruiloftskleding vlucht langs het Grand Aurelius Theater voor bewapende achtervolgers."
         },
         {
           "roll": 99,
@@ -868,7 +868,415 @@
         },
         {
           "roll": 100,
-          "result": "Onder een losliggende straatsteen ligt een kleine beurs met buitenlandse munten en een naam."
+          "result": "Onder een steen bij De Marrow ligt een beurs met vreemde munten en de naam van een Gutterfall-contact."
+        }
+      ]
+    },
+    {
+      "id": "hempstead-geruchten",
+      "name": "Hempstead — Geruchten & Intriges (d100)",
+      "description": "100 onbevestigde, onderzoekbare leads over Rookhand, bendes, afpersing, corruptie, smokkel, magie en macht in bestaande Hempstead-locaties. Namen en facties zijn wiki-canon; de specifieke geruchten zijn door de DM te kiezen verhaakhaken en géén vaststaande feiten.",
+      "die": "1d100",
+      "rows": [
+        {
+          "roll": 1,
+          "result": "De Grote Haven: Een havenarbeider zegt dat een vracht zonder papieren elke vijfde nacht verdwijnt."
+        },
+        {
+          "roll": 2,
+          "result": "De Grote Haven: Een schipper zag een boot zonder lichten vertrekken ondanks een Riverguard-controle."
+        },
+        {
+          "roll": 3,
+          "result": "De Grote Haven: Een kadebaas betaalt beschermgeld aan een onbekende koerier."
+        },
+        {
+          "roll": 4,
+          "result": "De Grote Haven: Een douanier heeft twee verschillende registers voor dezelfde schepen."
+        },
+        {
+          "roll": 5,
+          "result": "De Grote Haven: Een verdwenen bemanningslid liet een halve plattegrond van de pakhuizen achter."
+        },
+        {
+          "roll": 6,
+          "result": "De Grote Haven: Een vracht wordt als graan geregistreerd maar klinkt als metaal."
+        },
+        {
+          "roll": 7,
+          "result": "De Grote Haven: Een scheepsjongen zag een Highcourt-zegel op een anoniem transport."
+        },
+        {
+          "roll": 8,
+          "result": "De Grote Haven: Een reder koopt goedkoop alle pakhuizen waarvan de eigenaren zijn bedreigd."
+        },
+        {
+          "roll": 9,
+          "result": "De Grote Haven: Iemand biedt een fortuin voor een kwijtgeraakt scheepslogboek."
+        },
+        {
+          "roll": 10,
+          "result": "De Grote Haven: Een bootsman kent de geheime plek waar smokkelwaar wordt gelost."
+        },
+        {
+          "roll": 11,
+          "result": "Marrow Market: Een koopvrouw heeft de namen van drie afpersers opgeschreven."
+        },
+        {
+          "roll": 12,
+          "result": "Marrow Market: Een marktinspecteur laat één handelaar alle regels overtreden."
+        },
+        {
+          "roll": 13,
+          "result": "Marrow Market: Een schuit vaart elke week met dezelfde lege kisten door De Marrow."
+        },
+        {
+          "roll": 14,
+          "result": "Marrow Market: Onder het Blauwe Bruggetje worden dreigbrieven verwisseld."
+        },
+        {
+          "roll": 15,
+          "result": "Marrow Market: Een Havenmees heeft een waardevolle zegelring naar zijn nest gebracht."
+        },
+        {
+          "roll": 16,
+          "result": "Marrow Market: Een kruidenverkoper verkoopt middelen uit een gesloten quarantainevoorraad."
+        },
+        {
+          "roll": 17,
+          "result": "Marrow Market: Een valse weegsteen maakt een handelsfamilie steenrijk."
+        },
+        {
+          "roll": 18,
+          "result": "Marrow Market: Een kind zag wie een vermiste koopman in een boot meenam."
+        },
+        {
+          "roll": 19,
+          "result": "Marrow Market: Een schuldeiser koopt systematisch de vergunningen van kleine marktkramen."
+        },
+        {
+          "roll": 20,
+          "result": "Marrow Market: Een boekhouder verbergt de lijst met geheime betalingen van de kooplieden."
+        },
+        {
+          "roll": 21,
+          "result": "Forgeward: Een smid krijgt geheime bestellingen voor ongenummerde wapens."
+        },
+        {
+          "roll": 22,
+          "result": "Forgeward: Van de werven verdwijnen identieke tandwielen en sloten."
+        },
+        {
+          "roll": 23,
+          "result": "Forgeward: Een artificer-construct volgt mensen met een Riverguard-insigne."
+        },
+        {
+          "roll": 24,
+          "result": "Forgeward: Brumgar Heavyhands ontving een dreigbrief vóór een gildestemming."
+        },
+        {
+          "roll": 25,
+          "result": "Forgeward: Via De Slagader vertrekken volle kolenschuiten zonder bestemming."
+        },
+        {
+          "roll": 26,
+          "result": "Forgeward: Een gildevergunning kan volgens arbeiders alleen met smeergeld worden verkregen."
+        },
+        {
+          "roll": 27,
+          "result": "Forgeward: Een militaire wapenlevering is naar een onbekende werkplaats omgeleid."
+        },
+        {
+          "roll": 28,
+          "result": "Forgeward: Een forgewardse leerling heeft een lijst met corrupte leveranciers."
+        },
+        {
+          "roll": 29,
+          "result": "Forgeward: Iemand wil De Slagader blokkeren om de prijs van staal op te drijven."
+        },
+        {
+          "roll": 30,
+          "result": "Forgeward: De Gildekring onderzoekt een verborgen voorraad aan vervalste munten."
+        },
+        {
+          "roll": 31,
+          "result": "De Riverguard: Een gevangene in De Looier weet wie douanebeambten laat verdwijnen."
+        },
+        {
+          "roll": 32,
+          "result": "De Riverguard: Bij Ironmarch ligt een arrestatielijst van mensen die nog vrij zijn."
+        },
+        {
+          "roll": 33,
+          "result": "De Riverguard: Een wacht weigert een bevel van het Zilveren Comité en wordt overgeplaatst."
+        },
+        {
+          "roll": 34,
+          "result": "De Riverguard: Er circuleren vervalste arrestatiebevelen met echte zegels."
+        },
+        {
+          "roll": 35,
+          "result": "De Riverguard: Een patrouille wordt iedere week van dezelfde kade weggehouden."
+        },
+        {
+          "roll": 36,
+          "result": "De Riverguard: Een onbekende betaalt de boetes van gewelddadige afpersers."
+        },
+        {
+          "roll": 37,
+          "result": "De Riverguard: Een geheim patrouilleschema is bij smokkelaars terechtgekomen."
+        },
+        {
+          "roll": 38,
+          "result": "De Riverguard: Een ontslagen wachter bewaart een register van steekpenningen."
+        },
+        {
+          "roll": 39,
+          "result": "De Riverguard: Een informant van Thalos Broadshore verdween vlak voor een ontmoeting."
+        },
+        {
+          "roll": 40,
+          "result": "De Riverguard: Een razzia pakte enkel kleine smokkelaars; de organisatoren waren gewaarschuwd."
+        },
+        {
+          "roll": 41,
+          "result": "De Rookhand: Twee bendes betalen aan iemand die de naam Rookhand nooit uitspreekt."
+        },
+        {
+          "roll": 42,
+          "result": "De Rookhand: Een edelman gebruikte het woord Rookhand voordat de geruchten de haven bereikten."
+        },
+        {
+          "roll": 43,
+          "result": "De Rookhand: Een bendeleider levert op dezelfde plek elke maand een gesloten kist af."
+        },
+        {
+          "roll": 44,
+          "result": "De Rookhand: Vijf dreigbrieven dragen hetzelfde roetteken maar ander handschrift."
+        },
+        {
+          "roll": 45,
+          "result": "De Rookhand: Een afperser die zich Rookhand noemde werd later zelf zwaar mishandeld."
+        },
+        {
+          "roll": 46,
+          "result": "De Rookhand: Een verdwenen boekhouder kopieerde de geldstromen van een netwerk zonder naam."
+        },
+        {
+          "roll": 47,
+          "result": "De Rookhand: Een handelaar kreeg gestolen waar terug na een belofte aan een onbekende."
+        },
+        {
+          "roll": 48,
+          "result": "De Rookhand: Een getuige van een ontvoering zag alleen een zilveren handschoen."
+        },
+        {
+          "roll": 49,
+          "result": "De Rookhand: Iemand lokt rivaliserende bendes in een oorlog om grond goedkoper op te kopen."
+        },
+        {
+          "roll": 50,
+          "result": "De Rookhand: Een straatkind weet wie de betalingen uit de haven komt ophalen."
+        },
+        {
+          "roll": 51,
+          "result": "Gutterfall: Een jongen verdween na het vinden van een verborgen deur bij de haven."
+        },
+        {
+          "roll": 52,
+          "result": "Gutterfall: Een smokkelaar verkoopt een verouderde kaart van ondergrondse doorgangen."
+        },
+        {
+          "roll": 53,
+          "result": "Gutterfall: Een gewonde bendeleider beschuldigt een valse Rookhand van een overval."
+        },
+        {
+          "roll": 54,
+          "result": "Gutterfall: Een kelder loopt elke nacht vol water behalve wanneer een schip aanmeert."
+        },
+        {
+          "roll": 55,
+          "result": "Gutterfall: Een geheime veiling vraagt om geheimen in plaats van goud."
+        },
+        {
+          "roll": 56,
+          "result": "Gutterfall: Een gids is gevlucht nadat zijn veilige route werd verraden."
+        },
+        {
+          "roll": 57,
+          "result": "Gutterfall: Een ondergronds wachtwoord blijkt bij de verkeerde mensen bekend."
+        },
+        {
+          "roll": 58,
+          "result": "Gutterfall: Een arts behandelt criminelen en bewaart een versleutelde namenlijst."
+        },
+        {
+          "roll": 59,
+          "result": "Gutterfall: Een gesloten tunnel is heropend en de eerste verkenner kwam veranderd terug."
+        },
+        {
+          "roll": 60,
+          "result": "Gutterfall: Iemand verkoopt toegangspassen voor straten die op geen kaart staan."
+        },
+        {
+          "roll": 61,
+          "result": "Highcourt: Een lid van het Zilveren Comité laat de havenbelasting voor één reder vervallen."
+        },
+        {
+          "roll": 62,
+          "result": "Highcourt: Het Comité stemt binnenkort over nieuwe heffingen terwijl leden pakhuizen opkopen."
+        },
+        {
+          "roll": 63,
+          "result": "Highcourt: Een paleisadviseur ontmoet 's nachts een onbekende bij Marrow Market."
+        },
+        {
+          "roll": 64,
+          "result": "Highcourt: Op vrachtpapieren staat een vervalste handtekening van koning Arcturus Hems IX."
+        },
+        {
+          "roll": 65,
+          "result": "Highcourt: Een brief aan prinses Marinthia over afpersing is onderschept."
+        },
+        {
+          "roll": 66,
+          "result": "Highcourt: Kanselier Mordain Caltrass stelde een gesprek over smokkel telkens uit."
+        },
+        {
+          "roll": 67,
+          "result": "Highcourt: Een hofleverancier rekent het driedubbele voor gewone goederen."
+        },
+        {
+          "roll": 68,
+          "result": "Highcourt: Een schip zou de koninklijke haven gebruiken voor een geheim transport."
+        },
+        {
+          "roll": 69,
+          "result": "Highcourt: Een diplomaat is beroofd maar wil niet verklaren wat is gestolen."
+        },
+        {
+          "roll": 70,
+          "result": "Highcourt: Een magistrate bevoordeelt een scheepswerf waarin haar broer aandelen bezit."
+        },
+        {
+          "roll": 71,
+          "result": "Arcanum Quarter: Een student zag verboden runen op een van de vier bruggen."
+        },
+        {
+          "roll": 72,
+          "result": "Arcanum Quarter: Een onderzoek van de Zilveren Ring veroorzaakte 's nachts blauw licht."
+        },
+        {
+          "roll": 73,
+          "result": "Arcanum Quarter: Een in beslag genomen artefact verscheen opnieuw op Marrow Market."
+        },
+        {
+          "roll": 74,
+          "result": "Arcanum Quarter: Vaelion Meristyr onderzoekt persoonlijk een ogenschijnlijk klein incident."
+        },
+        {
+          "roll": 75,
+          "result": "Arcanum Quarter: Een professor sloot een universiteitsgang na een archiefdiefstal."
+        },
+        {
+          "roll": 76,
+          "result": "Arcanum Quarter: De Riverguard en Arcane Enforcers ruziën over dezelfde verdachte."
+        },
+        {
+          "roll": 77,
+          "result": "Arcanum Quarter: Een vermeende brief uit de Arcane Prison noemt een onbekende gevangene."
+        },
+        {
+          "roll": 78,
+          "result": "Arcanum Quarter: Magische resten uit Gutterfall worden als alledaagse voorwerpen verkocht."
+        },
+        {
+          "roll": 79,
+          "result": "Arcanum Quarter: Een levitatielantaarn wijst elke nacht naar dezelfde steeg."
+        },
+        {
+          "roll": 80,
+          "result": "Arcanum Quarter: Een scheepslogboek zou de identiteit van de Grand Archivist onthullen."
+        },
+        {
+          "roll": 81,
+          "result": "Oldstone en Theatrium: Een valse monnik haalt giften op in naam van de Wachters van de Vlam."
+        },
+        {
+          "roll": 82,
+          "result": "Oldstone en Theatrium: Seraphiel Dawnstar beschermt een getuige van corruptie."
+        },
+        {
+          "roll": 83,
+          "result": "Oldstone en Theatrium: In de Sancta Ignis Basiliek liggen briefjes met namen van vermiste kinderen."
+        },
+        {
+          "roll": 84,
+          "result": "Oldstone en Theatrium: Een heilig voorwerp is gestolen en de diefstal wordt stilgehouden."
+        },
+        {
+          "roll": 85,
+          "result": "Oldstone en Theatrium: Een handelaar probeert de voedselhulp van de Wachters te sturen."
+        },
+        {
+          "roll": 86,
+          "result": "Oldstone en Theatrium: Een onbekende wil de Nacht van het Blauwe Licht verstoren."
+        },
+        {
+          "roll": 87,
+          "result": "Oldstone en Theatrium: Een BlueForged-wapen wordt voor een onwaarschijnlijk lage prijs verkocht."
+        },
+        {
+          "roll": 88,
+          "result": "Oldstone en Theatrium: Aurelia Vaunt wordt bedreigd vanwege een optreden in het Grand Aurelius Theater."
+        },
+        {
+          "roll": 89,
+          "result": "Oldstone en Theatrium: Een acteur spreekt op het podium geheimen van belangrijke kooplieden uit."
+        },
+        {
+          "roll": 90,
+          "result": "Oldstone en Theatrium: Een gast in De Gouden Slak heeft een sleutel voor een verboden pakhuis achtergelaten."
+        },
+        {
+          "roll": 91,
+          "result": "Grimholt en Everwold: Een onbekende verspreidt valse oproepen voor duels in De Rode Arena."
+        },
+        {
+          "roll": 92,
+          "result": "Grimholt en Everwold: Overvallers dragen Grimholt-helmen om orcs de schuld te geven."
+        },
+        {
+          "roll": 93,
+          "result": "Grimholt en Everwold: Een vechter uit De Rode Arena wordt gechanteerd om een duel te verliezen."
+        },
+        {
+          "roll": 94,
+          "result": "Grimholt en Everwold: Een geheime lijst bevat alle doorgangen tussen Grimholt en Ironmarch."
+        },
+        {
+          "roll": 95,
+          "result": "Grimholt en Everwold: Wapens voor rivaliserende groepen in Grimholt blijken uit Forgeward te komen."
+        },
+        {
+          "roll": 96,
+          "result": "Grimholt en Everwold: Een bode van Het Halvemaanspad verdween met bewijs van illegale houtkap."
+        },
+        {
+          "roll": 97,
+          "result": "Grimholt en Everwold: Een zeldzame Myrabor-paddenstoel verschijnt op de zwarte markt."
+        },
+        {
+          "roll": 98,
+          "result": "Grimholt en Everwold: Een jager zag een Myrthalon boven de stad vlak voor een verdwijning."
+        },
+        {
+          "roll": 99,
+          "result": "Grimholt en Everwold: Een handelaar koopt alle kruiden van de Silverbloom Enclave op."
+        },
+        {
+          "roll": 100,
+          "result": "Grimholt en Everwold: Eén brug naar het Arcanum wordt volgens een anonieme waarschuwing tijdens de markt afgesloten."
         }
       ]
     }
