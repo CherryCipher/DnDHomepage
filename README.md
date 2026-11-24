@@ -13,6 +13,10 @@ A simple, locally hosted D&D DM dashboard with looping music, one-shot sound eff
 
 Do **not** open `index.html` directly using `file://`: browsers block loading the JSON files that way.
 
+## Battle Tools: initiative tracker
+
+The first tab provides an initiative tracker. Enter a combatant's name and starting HP, then press **Add to initiative**. Drag the handle to reorder the turn list, or use the arrow controls as an alternative (also useful on touchscreens). HP is a directly editable number input; **Remove** removes the combatant. The list, order, and HP are saved automatically in this browser's `localStorage` and are restored after a refresh. No server or account is required. Data is per browser/device and is not synced between devices.
+
 ## Add music and sound effects
 
 1. Put music files in `data/soundboard/music/` and sound effects in `data/soundboard/sfx/`.
