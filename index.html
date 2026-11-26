@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
   <script src="battle-tools.js" defer></script>
+  <script src="map.js" defer></script>
 </head>
 <body>
   <div class="app-shell">
@@ -23,6 +24,7 @@
     <nav class="tabs" aria-label="Main navigation">
       <button class="tab is-active" id="tab-battle-tools" type="button" aria-selected="true" aria-controls="panel-battle-tools" role="tab">⚔ &nbsp; Battle Tools</button>
       <button class="tab" id="tab-soundboard" type="button" aria-selected="false" aria-controls="panel-soundboard" role="tab">♫ &nbsp; Soundboard</button>
+      <button class="tab" id="tab-map" type="button" aria-selected="false" aria-controls="panel-map" role="tab">⌖ &nbsp; Interactive Map</button>
       <button class="tab" id="tab-tables" type="button" aria-selected="false" aria-controls="panel-tables" role="tab">⚄ &nbsp; Random Tables</button>
       <a class="tab wiki-tab" href="https://hempstead.cherrynuggetgames.nl/" target="_blank" rel="noopener noreferrer" aria-label="Open Hempstead Wiki in a new tab">✦ &nbsp; Hempstead Wiki ↗</a>
     </nav>
@@ -88,6 +90,72 @@
           <label class="volume-control" for="sfx-volume"><span>FX volume</span><input id="sfx-volume" type="range" min="0" max="100" value="85"><output id="sfx-volume-value" for="sfx-volume">85%</output></label>
         </div>
         <p id="soundboard-message" class="message" role="status" aria-live="polite"></p>
+      </section>
+
+      <section id="panel-map" class="tab-panel" role="tabpanel" aria-labelledby="tab-map" hidden>
+        <div class="map-header">
+          <div><p class="eyebrow">EXPLORE HEMPSTEAD</p><h2>Interactive City Map</h2></div>
+          <div class="map-toolbar">
+            <label for="map-category-filter">Filter</label>
+            <select id="map-category-filter"><option value="all">Alle locaties</option><option value="shop">Shops</option><option value="location">Locaties</option><option value="house">Huizen</option><option value="tavern">Taverns</option><option value="poi">POI's</option></select>
+            <button type="button" class="control-button" id="map-edit-toggle" aria-pressed="false">Kaart bewerken</button>
+          </div>
+        </div>
+        <p id="map-status" class="map-status" role="status"></p>
+        <div class="map-layout">
+          <aside class="map-sidebar" aria-label="Locatiegegevens">
+            <div id="map-detail">
+              <p class="eyebrow">HEMPSTEAD</p><h3>Kies een hotspot</h3>
+              <p>Klik op een locatie op de kaart om de details te openen. Gebruik 'Kaart bewerken' om je eigen kaart en hotspots toe te voegen.</p>
+            </div>
+            <div id="map-editor" hidden>
+              <p class="eyebrow">LOCAL EDITOR</p><h3>Kaarteditor</h3>
+              <p class="map-hint">Bewerkingen worden op dit apparaat opgeslagen. Exporteer JSON om ze op je website te publiceren.</p>
+              <div class="map-editor-actions">
+                <button type="button" class="control-button" id="map-new">+ Hotspot plaatsen</button>
+                <button type="button" class="control-button" id="map-export">Export JSON</button>
+                <label class="control-button map-file-label">Import JSON<input id="map-import" type="file" accept=".json,application/json"></label>
+              </div>
+              <label class="map-field">Kaartbestand / pad<input id="map-image-path" type="text" placeholder="data/map/hempstead.png"></label>
+              <button type="button" class="control-button" id="map-apply-path">Kaartpad opslaan</button>
+              <label class="control-button map-file-label">PNG/JPG lokaal bekijken<input id="map-image-upload" type="file" accept="image/png,image/jpeg,image/webp"></label>
+              <p class="map-hint">Lokale afbeeldingen worden in deze browser bewaard. Voor publicatie zet je je PNG in de repository en vul je het bijbehorende pad hierboven in.</p>
+              <form id="map-hotspot-form" hidden>
+                <h4 id="map-editor-title">Hotspot</h4>
+                <label class="map-field">Naam<input id="map-hotspot-name" required maxlength="120"></label>
+                <label class="map-field">Categorie<select id="map-hotspot-category"><option value="shop">Shop</option><option value="location">Locatie</option><option value="house">Huis</option><option value="tavern">Tavern</option><option value="poi">POI</option></select></label>
+                <label class="map-field">Beschrijving<textarea id="map-hotspot-description" rows="3"></textarea></label>
+                <label class="map-field map-optional">Afbeelding (pad of URL)<input id="map-hotspot-image" placeholder="data/map/places/locatie.jpg"></label>
+                <label class="map-field">DM-beschrijving (alleen voor jou)<textarea id="map-hotspot-dm" rows="3"></textarea></label>
+                <label class="map-field">Vaste personen (één per regel)<textarea id="map-hotspot-people" rows="3"></textarea></label>
+                <div id="map-advanced-persons">
+                  <label class="map-field">Willekeurige personen (één per regel)<textarea id="map-hotspot-random-people" rows="3"></textarea></label>
+                  <label class="map-field">Aantal willekeurige personen<input id="map-hotspot-random-count" type="number" min="0" max="30" value="0"></label>
+                </div>
+                <div id="map-tables-section">
+                  <p class="map-field-title">Gekoppelde random tables</p>
+                  <div id="map-table-options" class="map-table-options"></div>
+                </div>
+                <div class="map-editor-actions">
+                  <button type="submit" class="initiative-add">Hotspot opslaan</button>
+                  <button type="button" class="control-button" id="map-reposition">Pin verplaatsen</button>
+                  <button type="button" class="initiative-remove" id="map-delete">Verwijderen</button>
+                </div>
+                <p class="map-hint">DM-notities staan in de geëxporteerde JSON: publiceer die niet onbeveiligd als je spelers deze website ook bezoeken.</p>
+              </form>
+            </div>
+          </aside>
+          <div class="map-canvas-wrap">
+            <div id="map-viewport" class="map-viewport" aria-label="Stadskaart van Hempstead">
+              <div id="map-surface" class="map-surface">
+                <img id="map-image" alt="Stadskaart Hempstead" draggable="false">
+                <div id="map-pins" class="map-pins"></div>
+                <div id="map-empty" class="map-empty"><strong>Voeg je Hempstead-kaart toe</strong><span>Zet je PNG in data/map/hempstead.png of laad hem via de kaarteditor.</span></div>
+              </div>
+            </div>
+            <div class="map-legend" aria-label="Kaartlegenda"><span>🛍 Shops</span><span>⌂ Huizen</span><span>🍺 Taverns</span><span>◆ Locaties</span><span>✦ POI</span></div>
+          </div>
+        </div>
       </section>
 
       <section id="panel-tables" class="tab-panel" role="tabpanel" aria-labelledby="tab-tables" hidden>
