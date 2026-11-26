@@ -208,11 +208,11 @@
     $("encounter-show-monsters").classList.toggle("is-active",isMonster);
     $("encounter-show-players").classList.toggle("is-active",!isMonster);
     const query=$("encounter-search").value.trim().toLowerCase();
-    const maxCr=$("encounter-cr").value, maxXp=$("encounter-xp").value, type=$("encounter-type").value;
+    const maxCr=$("encounter-cr").value, maxXp=$("encounter-xp").value, type=$("encounter-type").value, source=$("encounter-source").value;
     let items=isMonster?catalog:[...playerMap.values()];
     if(isMonster)items=items.filter(m=>(!query||m.name.toLowerCase().includes(query))&&
       (!maxCr||m.challenge_rating<=Number(maxCr))&&
-      (!maxXp||m.xp<=Number(maxXp))&&(!type||m.type===type));
+      (!maxXp||m.xp<=Number(maxXp))&&(!type||m.type===type)&&(!source||m.source===source));
     const shown=items.slice(0,150);
     const frag=document.createDocumentFragment();
     shown.forEach(m=>{
@@ -289,7 +289,7 @@
   }
   $("encounter-name").addEventListener("input",e=>{encounterName=e.target.value;save();});
   $("encounter-search").addEventListener("input",renderCatalog);
-  ["encounter-cr","encounter-xp","encounter-type"].forEach(id=>$(id).addEventListener("change",renderCatalog));
+  ["encounter-cr","encounter-xp","encounter-type","encounter-source"].forEach(id=>$(id).addEventListener("change",renderCatalog));
   $("encounter-show-monsters").addEventListener("click",()=>{browserMode="monsters";renderCatalog();});
   $("encounter-show-players").addEventListener("click",()=>{browserMode="players";renderCatalog();});
   $("encounter-manual-form").addEventListener("submit",e=>{
