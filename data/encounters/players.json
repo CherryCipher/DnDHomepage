@@ -1,0 +1,12 @@
+{
+  "players": [
+    {
+      "id": "voorbeeld-speler",
+      "name": "Voorbeeldspeler (vervang deze)",
+      "hp": 25,
+      "ac": 15,
+      "initiative": "",
+      "notes": "Vul hier je eigen spelers in. Verwijder dit voorbeeld."
+    }
+  ]
+}
