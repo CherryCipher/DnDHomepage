@@ -46,7 +46,7 @@
       "base_monster": "assassin",
       "faction": "Huis Hems / De Rookhand",
       "city_book_note": "Assassin-statblock bij de geheime leider van de Rookhand.",
-      "statblock_image": "data/encounters/statblocks/shadow-alt.png"
+      "statblock_image": "data/encounters/statblocks/assassin.png"
     },
     {
       "index": "jent-hollowheel",
@@ -177,7 +177,7 @@
       "base_monster": "assassin",
       "faction": "Hempsteadse onderwereld",
       "city_book_note": "Assassin-kaart bij Highcourt.",
-      "statblock_image": "data/encounters/statblocks/shadow-alt.png"
+      "statblock_image": "data/encounters/statblocks/assassin.png"
     },
     {
       "index": "riverguard-palace-knight",
@@ -495,7 +495,7 @@
       "base_monster": "acolyte",
       "faction": "De Wachters van de Vlam",
       "city_book_note": "Acolyte-gebaseerde City Book-kaart.",
-      "armor_class": 13,
+      "armor_class": 10,
       "hit_points": 9,
       "hit_dice": "2d8",
       "challenge_rating": 0.25,
@@ -505,10 +505,60 @@
     {
       "index": "hemstead-bandit-lord",
       "name": "Bandit Lord",
-      "base_monster": "bandit-captain",
       "faction": "Hempsteadse bendes",
       "city_book_note": "Bewerkte Bandit Captain-variant uit de City Book-kaarten.",
-      "statblock_image": "data/encounters/statblocks/bandit-lord.png"
+      "statblock_image": "data/encounters/statblocks/bandit-lord.png",
+      "size": "Medium",
+      "type": "humanoid",
+      "alignment": "non-lawful",
+      "armor_class": 16,
+      "hit_points": 91,
+      "hit_dice": "14d8+28",
+      "challenge_rating": 4,
+      "xp": 1100,
+      "speed": {
+        "walk": "30 ft."
+      },
+      "strength": 16,
+      "dexterity": 15,
+      "constitution": 14,
+      "intelligence": 14,
+      "wisdom": 11,
+      "charisma": 14,
+      "special_abilities": [
+        {
+          "name": "Pack Tactics",
+          "desc": "Advantage on an attack roll against a creature if at least one of the bandit lord's allies is within 5 ft of the creature and isn't incapacitated."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "desc": "Makes three melee or ranged attacks."
+        },
+        {
+          "name": "Greatsword",
+          "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6+3) slashing."
+        },
+        {
+          "name": "Dagger",
+          "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft or range 20/60 ft. Hit: 5 (1d4+3) piercing."
+        },
+        {
+          "name": "Leadership (Recharge after a Short or Long Rest)",
+          "desc": "For 1 minute, a nonhostile creature it can see within 30 ft can add a d4 to an attack roll or saving throw if it can hear and understand the bandit lord. One leadership die at a time; ends if the lord is incapacitated."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Parry",
+          "desc": "Adds 2 to AC against one melee attack that would hit, while the bandit lord sees the attacker and wields a melee weapon."
+        },
+        {
+          "name": "Redirect Attack",
+          "desc": "When a creature the lord can see targets it with an attack, the lord swaps places with an ally within 5 ft; that ally becomes the target."
+        }
+      ]
     },
     {
       "index": "riverguard-patrol",
