@@ -158,6 +158,17 @@
       details.append(summary);
       if(!monster){fragment.append(details);return;}
       const body=elem("div","encounter-statblock-body");
+      if (monster.statblock_image) {
+        const card=document.createElement("img");
+        card.className="encounter-source-card";
+        card.alt="Originele statblockkaart uit het Hempstead DM City Book: "+monster.name;
+        card.loading="lazy";
+        card.hidden=true;
+        card.addEventListener("load",()=>{card.hidden=false;});
+        card.addEventListener("error",()=>{card.hidden=true;});
+        card.src=monster.statblock_image;
+        body.append(card);
+      }
       body.append(elem("p","encounter-monster-subtitle",[monster.size,monster.type,monster.subtype,monster.alignment].filter(Boolean).join(" · ")));
       if(monster.faction || monster.city_book_note) {
         const details=[monster.faction ? "Factie: "+monster.faction : "",monster.city_book_note || ""].filter(Boolean);
