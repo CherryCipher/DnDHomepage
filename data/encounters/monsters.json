@@ -388,6 +388,189 @@
           "desc": "Magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack."
         }
       ]
+    },
+    {
+      "index": "hemstead-bard",
+      "name": "Hempstead Bard",
+      "faction": "Theatrium",
+      "city_book_note": "Bard-statblock uit het City Book (afbeelding na de NPC's van Theatrium).",
+      "size": "Medium",
+      "type": "humanoid",
+      "armor_class": 15,
+      "hit_points": 44,
+      "hit_dice": "8d8+8",
+      "challenge_rating": 2,
+      "xp": 450,
+      "speed": {
+        "walk": "30 ft."
+      },
+      "strength": 11,
+      "dexterity": 14,
+      "constitution": 12,
+      "intelligence": 10,
+      "wisdom": 13,
+      "charisma": 14,
+      "actions": [
+        {
+          "name": "Multiattack",
+          "desc": "Makes two shortsword or shortbow attacks; may replace one with Spellcasting."
+        },
+        {
+          "name": "Shortsword",
+          "desc": "Melee Weapon Attack: +4 to hit. Hit: 5 (1d6+2) piercing."
+        },
+        {
+          "name": "Shortbow",
+          "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft. Hit: 5 (1d6+2) piercing."
+        },
+        {
+          "name": "Cacophony (Recharge 4-6)",
+          "desc": "Each creature in a 15-foot cube from the bard makes DC 12 Constitution save. Failed: 9 (2d8) thunder damage and pushed up to 10 ft; successful: half damage, no push."
+        },
+        {
+          "name": "Spellcasting",
+          "desc": "Charisma, DC 12: at will dancing lights, mage hand, prestidigitation; 1/day each charm person, invisibility, sleep."
+        }
+      ],
+      "bonus_actions": [
+        {
+          "name": "Taunt (2/Day)",
+          "desc": "One creature within 30 ft that can hear the bard makes DC 12 Charisma save or has disadvantage on ability checks, attack rolls and saving throws until start of bard's next turn."
+        }
+      ]
+    },
+    {
+      "index": "high-enforcer",
+      "name": "High Enforcer",
+      "base_monster": "mage",
+      "faction": "De Arcane Enforcers",
+      "city_book_note": "Eigen naam op Mage-gebaseerde City Book-kaart.",
+      "armor_class": 12,
+      "hit_points": 40,
+      "hit_dice": "9d8",
+      "challenge_rating": 6,
+      "xp": 2300
+    },
+    {
+      "index": "vlammonnik",
+      "name": "Vlammonnik",
+      "base_monster": "cult-fanatic",
+      "faction": "De Wachters van de Vlam",
+      "city_book_note": "Cult Fanatic-gebaseerde City Book-kaart.",
+      "armor_class": 13,
+      "hit_points": 33,
+      "hit_dice": "6d8+6",
+      "challenge_rating": 2,
+      "xp": 450
+    },
+    {
+      "index": "wachter-van-de-vlam",
+      "name": "Wachter van de Vlam",
+      "base_monster": "acolyte",
+      "faction": "De Wachters van de Vlam",
+      "city_book_note": "Acolyte-gebaseerde City Book-kaart.",
+      "armor_class": 13,
+      "hit_points": 9,
+      "hit_dice": "2d8",
+      "challenge_rating": 0.25,
+      "xp": 50
+    },
+    {
+      "index": "hemstead-bandit-lord",
+      "name": "Bandit Lord",
+      "base_monster": "bandit-captain",
+      "faction": "Hempsteadse bendes",
+      "city_book_note": "Bewerkte Bandit Captain-variant uit de City Book-kaarten."
+    },
+    {
+      "index": "riverguard-patrol",
+      "name": "Riverguard — Patrol",
+      "faction": "De Riverguard",
+      "city_book_note": "Eigen Riverguard Patrol-statblock uit het City Book.",
+      "size": "Medium",
+      "type": "humanoid",
+      "alignment": "lawful good",
+      "armor_class": 19,
+      "hit_points": 27,
+      "hit_dice": "5d8+5",
+      "challenge_rating": 1,
+      "xp": 200,
+      "speed": {
+        "walk": "30 ft."
+      },
+      "strength": 14,
+      "dexterity": 14,
+      "constitution": 12,
+      "intelligence": 10,
+      "wisdom": 10,
+      "charisma": 10,
+      "special_abilities": [
+        {
+          "name": "Martial Advantage",
+          "desc": "Once per turn, adds 3 (1d6) damage when hitting a creature within 5 ft of an ally who is not incapacitated."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Shortsword",
+          "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft. Hit: 5 (1d6+2) piercing."
+        },
+        {
+          "name": "River Baton",
+          "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft. Hit: 3 (1d4+1) bludgeoning."
+        },
+        {
+          "name": "Shield Bash",
+          "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft. Hit: 9 (2d4+4) bludgeoning; Medium or smaller target DC 15 Strength save or knocked prone."
+        }
+      ]
+    },
+    {
+      "index": "halvemaanwacht",
+      "name": "Halvemaanwacht",
+      "faction": "De Riverguard / Everwold",
+      "city_book_note": "Eigen Halvemaanwacht-statblock uit het City Book.",
+      "size": "Medium",
+      "type": "humanoid",
+      "alignment": "lawful good",
+      "armor_class": 13,
+      "hit_points": 58,
+      "hit_dice": "9d8+18",
+      "challenge_rating": 3,
+      "xp": 700,
+      "speed": {
+        "walk": "30 ft."
+      },
+      "strength": 16,
+      "dexterity": 13,
+      "constitution": 14,
+      "intelligence": 10,
+      "wisdom": 11,
+      "charisma": 10,
+      "special_abilities": [
+        {
+          "name": "Brave",
+          "desc": "Advantage on saving throws against being frightened."
+        },
+        {
+          "name": "Keen Hearing and Sight",
+          "desc": "Advantage on Wisdom (Perception) checks relying on hearing or sight."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "desc": "Makes two melee or ranged attacks."
+        },
+        {
+          "name": "Spear",
+          "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft or range 20/60 ft. Hit: 6 (1d6+3) piercing, or 7 (1d8+3) with two hands in melee."
+        },
+        {
+          "name": "Longbow",
+          "desc": "Ranged Weapon Attack: +3 to hit, range 150/600 ft. Hit: 5 (1d8+1) piercing."
+        }
+      ]
     }
   ]
 }
