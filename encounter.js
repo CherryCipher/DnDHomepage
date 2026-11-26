@@ -159,6 +159,10 @@
       if(!monster){fragment.append(details);return;}
       const body=elem("div","encounter-statblock-body");
       body.append(elem("p","encounter-monster-subtitle",[monster.size,monster.type,monster.subtype,monster.alignment].filter(Boolean).join(" · ")));
+      if(monster.faction || monster.city_book_note) {
+        const details=[monster.faction ? "Factie: "+monster.faction : "",monster.city_book_note || ""].filter(Boolean);
+        body.append(elem("p","encounter-block-meta",details.join(" · ")));
+      }
       const stats=elem("div","encounter-core-stats");
       stats.append(elem("div","","AC "+ac(monster)),elem("div","","HP "+monster.hit_points+" ("+(monster.hit_dice||"—")+")"),elem("div","","Speed "+Object.entries(monster.speed||{}).map(([k,v])=>k+" "+v).join(", ")),
         elem("div","","CR "+crText(monster.challenge_rating)+" · "+monster.xp+" XP"));
@@ -272,9 +276,18 @@
     try {
       const raw=await getJSON("data/encounters/monsters.json");
       const items=Array.isArray(raw.monsters)?raw.monsters:[];
+      const bases=[...new Set(items.map(x=>x?.base_monster).filter(Boolean))];
+      await Promise.all(bases.filter(x=>!monsterMap.has(x)).map(x=>apiDetail(x)));
       for(const item of items){
-        const m=normalizeMonster({...item,source:"homebrew"},"homebrew");
-        if(m){m.index="custom-"+m.index;monsterMap.set(m.index,m);}
+        if(!item || typeof item.name!=="string")continue;
+        const base=item.base_monster ? monsterMap.get(item.base_monster) : null;
+        // Never fabricate missing stats. Incomplete template entries are skipped until SRD data is available.
+        if(item.base_monster && !base && (item.hit_points==null || item.armor_class==null))continue;
+        const m=normalizeMonster({...base,...item,source:"homebrew"},"homebrew");
+        if(m){
+          m.index="custom-"+(item.index || slug(item.name));
+          monsterMap.set(m.index,m);
+        }
       }
       catalog=[...monsterMap.values()].sort((a,b)=>a.name.localeCompare(b.name));
       renderFilters();renderCatalog();renderTracker();renderBlocks();
