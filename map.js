@@ -271,6 +271,18 @@
     });
     db.close();
   }
+  async function clearLocalImage() {
+    try {
+      const db = await imageDatabase();
+      await new Promise((resolve, reject) => {
+        const transaction = db.transaction("files", "readwrite");
+        transaction.objectStore("files").delete("city-map");
+        transaction.oncomplete = resolve;
+        transaction.onerror = () => reject(transaction.error);
+      });
+      db.close();
+    } catch { /* An absent local image is fine. */ }
+  }
   async function loadLocalImage() {
     try {
       const db = await imageDatabase();
@@ -367,10 +379,11 @@
     } catch (error) { status("Import mislukt: " + error.message); }
     event.target.value = "";
   });
-  $("map-apply-path").addEventListener("click", () => {
+  $("map-apply-path").addEventListener("click", async () => {
     store.data.image = $("map-image-path").value.trim();
     if (store.objectUrl) URL.revokeObjectURL(store.objectUrl);
     store.objectUrl = null;
+    await clearLocalImage();
     persist();
     imageLoad();
   });
