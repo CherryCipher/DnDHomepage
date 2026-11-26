@@ -140,3 +140,13 @@ To add a map:
 5. The editor uses `localStorage` for hotspot edits and IndexedDB for a local preview image. Edits **do not automatically update GitHub, the server, or other devices**. Committing a new map.json alone does not upload the actual PNG; the image must be added separately.
 
 **Security:** This browser-only editor is not an authenticated administration interface or shared database. Any data in public `data/map/map.json`, including DM notes, can be read by anybody who can access the website. If the site is publicly accessible to players, protect the DM toolkit with real authentication before publishing your private lore. A future Flask + SQLite admin API with server-side authorization can replace the local editor when multi-device editing is required.
+
+## Hempstead DM City Book import (November 2026)
+
+The project now includes **30 City Book NPC/statblock entries** in `data/encounters/monsters.json`. They are listed as **Homebrew**, searchable by name and filterable by CR, XP and type. This includes named NPCs (e.g. Seraphiel Dawnstar, Vaelion Meristyr, the Grey Crow, Chancellor Mordain Caltrass, Marinthia Hems, Jent Hollowheel and others), faction enemies, Riverguard archetypes, and the Everwold Dog.
+
+For standard-style City Book statblocks, `base_monster` references the original **SRD 5.1 creature index** and inherits its full traits/actions; the City Book's name and explicit overrides take precedence. These entries require the public SRD catalog or API to be reachable. For distinct City Book cards (e.g. Grey Crow, Palace Knight, Ember Sister, Bandit Lord, Everwold Dog, Riverguard Patrol and Halvemaanwacht), local structured data contains their own characteristics and actions. Some cards in the Word document appear next to general character sections rather than an unambiguous name: those are filed as **generic faction archetypes**, not assigned invented NPC names.
+
+The statblock JSON also refers to **23 optional original PNG illustrations** at `data/encounters/statblocks/*.png`. For fidelity, use the companion `Hempstead_Statblock_Afbeeldingen.zip` extracted from the Word document and extract its `data/` folder into the repository, then `git add`, `git commit`, `git push`. Without these files, the encounter builder still renders the text-based statblocks. The original images are **not** embedded in JSON.
+
+The Random Tables tab has **10 additional original 'What Are They Up To' faction tables** (six d6 tables for major powers and four d4 tables for street gangs), with **52 activities** taken from the City Book and marked with their original action type. Existing tables are preserved.
