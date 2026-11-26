@@ -7,7 +7,7 @@
   <title>Dungeon Master's Toolkit</title>
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
-  <script src="battle-tools.js" defer></script>
+  <script src="encounter.js" defer></script>
   <script src="map.js" defer></script>
 </head>
 <body>
@@ -22,7 +22,7 @@
     </header>
 
     <nav class="tabs" aria-label="Main navigation">
-      <button class="tab is-active" id="tab-battle-tools" type="button" aria-selected="true" aria-controls="panel-battle-tools" role="tab">⚔ &nbsp; Battle Tools</button>
+      <button class="tab is-active" id="tab-battle-tools" type="button" aria-selected="true" aria-controls="panel-battle-tools" role="tab">⚔ &nbsp; Encounters</button>
       <button class="tab" id="tab-soundboard" type="button" aria-selected="false" aria-controls="panel-soundboard" role="tab">♫ &nbsp; Soundboard</button>
       <button class="tab" id="tab-map" type="button" aria-selected="false" aria-controls="panel-map" role="tab">⌖ &nbsp; Interactive Map</button>
       <button class="tab" id="tab-tables" type="button" aria-selected="false" aria-controls="panel-tables" role="tab">⚄ &nbsp; Random Tables</button>
@@ -31,20 +31,46 @@
 
     <main>
       <section id="panel-battle-tools" class="tab-panel" role="tabpanel" aria-labelledby="tab-battle-tools">
-        <div class="section-heading"><div><p class="eyebrow">CONTROL THE ENCOUNTER</p><h2>Initiative Tracker</h2></div><span class="section-decoration" aria-hidden="true">✧ ━ ✧</span></div>
-        <div class="initiative-panel">
-          <form id="initiative-form" class="initiative-form">
-            <label for="initiative-name">Name</label>
-            <input id="initiative-name" type="text" maxlength="80" placeholder="Character or monster name" autocomplete="off" required>
-            <label for="initiative-start-hp">HP</label>
-            <input id="initiative-start-hp" type="number" step="1" value="10" aria-label="Starting HP" required>
-            <button class="initiative-add" type="submit">+ Add to initiative</button>
-          </form>
-          <div class="initiative-list-header"><h3>Turn Order <span id="initiative-count"></span></h3><p>Drag the handle to change the order. HP can be edited directly.</p></div>
-          <ol id="initiative-list" class="initiative-list" aria-label="Initiative turn order"></ol>
-          <p id="initiative-empty" class="initiative-empty">No combatants yet. Add a character or monster above.</p>
-          <p class="initiative-note">Stored locally in this browser. Reordering or changing HP saves automatically.</p>
-          <p id="initiative-message" class="message" role="status" aria-live="polite"></p>
+        <div class="section-heading"><div><p class="eyebrow">PREPARE & RUN COMBAT</p><h2>Encounter Builder</h2></div><span class="section-decoration" aria-hidden="true">✧ ━ ✧</span></div>
+        <div class="encounter-shell">
+          <div class="encounter-topbar">
+            <label class="encounter-field encounter-title-label">Encounter name<input id="encounter-name" placeholder="Bijv. Hinderlaag aan de kade"></label>
+            <div class="encounter-actions"><button id="encounter-export" type="button" class="control-button">Export encounter</button><label class="control-button encounter-file-label">Import encounter<input id="encounter-import" type="file" accept=".json,application/json"></label><button id="encounter-clear" type="button" class="initiative-remove">Leegmaken</button></div>
+          </div>
+          <div class="encounter-builder-grid">
+            <section class="encounter-catalog" aria-labelledby="encounter-catalog-title">
+              <div class="encounter-panel-heading"><h3 id="encounter-catalog-title">Monsters & spelers</h3><span id="encounter-catalog-status" class="encounter-tiny"></span></div>
+              <div class="encounter-switch"><button id="encounter-show-monsters" type="button" class="is-active">Monsters</button><button id="encounter-show-players" type="button">Spelers</button></div>
+              <div id="encounter-monster-controls">
+                <label class="encounter-field">Zoek monster<input id="encounter-search" type="search" placeholder="Goblin, zombie, dragon..."></label>
+                <div class="encounter-filters">
+                  <label class="encounter-field">Max. CR<select id="encounter-cr"><option value="">Alle CR</option></select></label>
+                  <label class="encounter-field">Max. XP<input id="encounter-xp" type="number" min="0" placeholder="Alle XP"></label>
+                  <label class="encounter-field">Type<select id="encounter-type"><option value="">Alle types</option></select></label>
+                </div>
+              </div>
+              <div id="encounter-player-controls" hidden><p class="encounter-hint">Spelers komen uit <code>data/encounters/players.json</code>.</p></div>
+              <div id="encounter-results" class="encounter-results" aria-label="Zoekresultaten monsters en spelers"></div>
+            </section>
+            <section class="encounter-tracker" aria-labelledby="encounter-tracker-title">
+              <div class="encounter-panel-heading"><h3 id="encounter-tracker-title">Initiative Tracker</h3><span id="encounter-summary" class="encounter-tiny"></span></div>
+              <form id="encounter-manual-form" class="encounter-manual-form">
+                <input id="encounter-manual-name" placeholder="Naam handmatig" maxlength="80" aria-label="Naam nieuwe deelnemer" required>
+                <input id="encounter-manual-hp" type="number" value="10" min="0" aria-label="Begin HP" required>
+                <button type="submit" class="initiative-add">+ Toevoegen</button>
+              </form>
+              <p class="encounter-hint">Versleep de greep om de beurtvolgorde aan te passen. Iedere deelnemer heeft zijn eigen HP en initiatiefwaarde.</p>
+              <ol id="encounter-turn-list" class="encounter-turn-list"></ol>
+              <p id="encounter-empty" class="initiative-empty">Voeg een monster of speler toe om te beginnen.</p>
+            </section>
+          </div>
+          <section class="encounter-statblocks" aria-labelledby="encounter-statblocks-title">
+            <div class="encounter-panel-heading"><h3 id="encounter-statblocks-title">Statblocks in deze encounter</h3><span id="encounter-statblocks-count" class="encounter-tiny"></span></div>
+            <p class="encounter-hint">Elk monstertype verschijnt hieronder één keer, ook wanneer er meerdere exemplaren in de initiative tracker staan. Klik op een statblock om het in of uit te klappen.</p>
+            <div id="encounter-statblocks-grid" class="encounter-statblocks-grid"></div>
+          </section>
+          <p class="encounter-hint">Deze encounter wordt lokaal in deze browser opgeslagen. De SRD-monstercatalogus wordt online ingeladen; eigen monsters en spelers komen uit de JSON-bestanden in je repository.</p>
+          <p id="encounter-message" class="message" role="status" aria-live="polite"></p>
         </div>
       </section>
 
