@@ -47,6 +47,7 @@
                   <label class="encounter-field">Max. CR<select id="encounter-cr"><option value="">Alle CR</option></select></label>
                   <label class="encounter-field">Max. XP<input id="encounter-xp" type="number" min="0" placeholder="Alle XP"></label>
                   <label class="encounter-field">Type<select id="encounter-type"><option value="">Alle types</option></select></label>
+                  <label class="encounter-field">Bron<select id="encounter-source"><option value="">Alle monsters</option><option value="srd">SRD</option><option value="homebrew">Homebrew</option></select></label>
                 </div>
               </div>
               <div id="encounter-player-controls" hidden><p class="encounter-hint">Spelers komen uit <code>data/encounters/players.json</code>.</p></div>
@@ -69,8 +70,6 @@
             <p class="encounter-hint">Elk monstertype verschijnt hieronder één keer, ook wanneer er meerdere exemplaren in de initiative tracker staan. Klik op een statblock om het in of uit te klappen.</p>
             <div id="encounter-statblocks-grid" class="encounter-statblocks-grid"></div>
           </section>
-          <p class="encounter-hint">Deze encounter wordt lokaal in deze browser opgeslagen. De SRD-monstercatalogus wordt online ingeladen; eigen monsters en spelers komen uit de JSON-bestanden in je repository.</p>
-          <p class="encounter-hint">Monsterdata: D&D 5e SRD 5.1 © Wizards of the Coast LLC · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> · <a href="https://github.com/5e-bits/5e-database" target="_blank" rel="noopener noreferrer">5e-bits dataset</a>. Niet de volledige commerciële Monster Manual.</p>
           <p id="encounter-message" class="message" role="status" aria-live="polite"></p>
         </div>
       </section>
