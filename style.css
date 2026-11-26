@@ -187,6 +187,3 @@
 @media(max-width:980px){.encounter-builder-grid{grid-template-columns:1fr}.encounter-results{max-height:320px}}
 @media(max-width:550px){.encounter-catalog,.encounter-tracker,.encounter-statblocks{padding:12px}.encounter-turn-item{gap:4px;padding:6px 4px}.encounter-number{width:47px}.encounter-grip{font-size:19px}.encounter-delete{padding:5px}.encounter-rank{min-width:13px}.encounter-combatant{font-size:12px}.encounter-abilities span{font-size:9px}.encounter-filters{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
-/* City Book cards are optional; the readable text statblock remains available. */
-.encounter-source-card{display:block;width:100%;max-width:440px;height:auto;object-fit:contain;margin:4px auto 16px;box-shadow:0 2px 12px #0005}
-.encounter-source-card[hidden]{display:none!important}
