@@ -295,7 +295,7 @@ async function loadTables() {
 }
 
 function setupTabs() {
-  const tabs = [byId("tab-battle-tools"), byId("tab-soundboard"), byId("tab-tables")];
+  const tabs = [byId("tab-battle-tools"), byId("tab-soundboard"), byId("tab-map"), byId("tab-tables")];
   tabs.forEach(tab => tab.addEventListener("click", () => {
     tabs.forEach(item => {
       const selected = item === tab;
