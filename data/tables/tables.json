@@ -1279,6 +1279,294 @@
           "result": "Grimholt en Everwold: Eén brug naar het Arcanum wordt volgens een anonieme waarschuwing tijdens de markt afgesloten."
         }
       ]
+    },
+    {
+      "id": "citybook-upto-huis-hems",
+      "name": "What Are They Up To — Huis Hems (d6)",
+      "description": "Activiteiten uit het Hempstead DM City Book, met bronrubriek per resultaat.",
+      "die": "1d6",
+      "rows": [
+        {
+          "roll": 1,
+          "result": "[Politiek] De koning onderhandelt met Silverbloom om een permanent vredesverdrag te vernieuwen — sommige edelen willen dat niet, uit angst voor elveninvloed."
+        },
+        {
+          "roll": 2,
+          "result": "[Politiek] Ze willen een nieuwe havenbelasting invoeren om de stadskas te herstellen, wat de handelaren woedend maakt."
+        },
+        {
+          "roll": 3,
+          "result": "[Dubieus] Een koninklijke adviseur betaalt de Riverguard om protestleiders in de haven “preventief” op te pakken."
+        },
+        {
+          "roll": 4,
+          "result": "[Dubieus] Iemand in het paleis smokkelt verboden magische artefacten via de koninklijke havenwachters."
+        },
+        {
+          "roll": 5,
+          "result": "[Positief] De koning stuurt geheime fondsen naar weduwen en wezen van dokwerkers die zijn omgekomen tijdens stormen."
+        },
+        {
+          "roll": 6,
+          "result": "[Positief] Een prinselijk familielid probeert achter de schermen corruptie in het Comité bloot te leggen zonder de reputatie van het koningshuis te schaden."
+        }
+      ]
+    },
+    {
+      "id": "citybook-upto-zilveren-comite",
+      "name": "What Are They Up To — Het Zilveren Comité (d6)",
+      "description": "Activiteiten uit het Hempstead DM City Book, met bronrubriek per resultaat.",
+      "die": "1d6",
+      "rows": [
+        {
+          "roll": 1,
+          "result": "[Politiek] Ze proberen een wet door te drukken die marktprijzen “reguleert”, maar in werkelijkheid gunstig is voor eigen bedrijven."
+        },
+        {
+          "roll": 2,
+          "result": "[Politiek] Ze willen de Arcanum-wetgeving aanscherpen zodat alleen hun bedrijven magische constructies mogen bouwen."
+        },
+        {
+          "roll": 3,
+          "result": "[Crimineel] Het Comité laat via een bende een havenstaking breken met geweld."
+        },
+        {
+          "roll": 4,
+          "result": "[Crimineel] Ze wassen geld via schijnbaar “religieuze donaties” aan de Wachters van de Vlam."
+        },
+        {
+          "roll": 5,
+          "result": "[Positief] Een paar eerlijke leden willen een fonds oprichten voor kleine ambachtslieden die dreigen te worden weggeconcurreerd."
+        },
+        {
+          "roll": 6,
+          "result": "[Positief] Eén Comitélid werkt (stiekem) aan bescherming voor slachtoffers van Zilverring-experimenten."
+        }
+      ]
+    },
+    {
+      "id": "citybook-upto-rookhand",
+      "name": "What Are They Up To — De Rookhand (d6)",
+      "description": "Activiteiten uit het Hempstead DM City Book, met bronrubriek per resultaat.",
+      "die": "1d6",
+      "rows": [
+        {
+          "roll": 1,
+          "result": "[Politiek] Ze willen infiltreren in de Riverguard-bevelstructuur door promoties te manipuleren."
+        },
+        {
+          "roll": 2,
+          "result": "[Politiek] Ze onderhandelen met een raadslid om een nieuwe wet te blokkeren die zwarte markten hard zou raken."
+        },
+        {
+          "roll": 3,
+          "result": "[Crimineel] Ze bereiden een grote overval op een belastingtransport naar Highcourt voor."
+        },
+        {
+          "roll": 4,
+          "result": "[Crimineel] Ze distribueren een nieuwe drug (“Shadowglass”) die tijdelijk magie versterkt — maar dodelijke bijwerkingen heeft."
+        },
+        {
+          "roll": 5,
+          "result": "[Positief] Ze beschermen weduwen van slachtoffers die door het Comité stilgelegd zijn — puur om steun te kopen, maar wel oprecht effectief."
+        },
+        {
+          "roll": 6,
+          "result": "[Positief] Ze jagen actief op een demon die zich in Gutterfall voedt… omdat hij “hun terrein verstoort”."
+        }
+      ]
+    },
+    {
+      "id": "citybook-upto-zilveren-ring",
+      "name": "What Are They Up To — De Zilveren Ring (d6)",
+      "description": "Activiteiten uit het Hempstead DM City Book, met bronrubriek per resultaat.",
+      "die": "1d6",
+      "rows": [
+        {
+          "roll": 1,
+          "result": "[Politiek] Ze willen een eigen zetel in de stadsraad om magische wetten zelf te bepalen."
+        },
+        {
+          "roll": 2,
+          "result": "[Politiek] Ze onderhandelen met de Wachters om minder restricties op experimenten te krijgen."
+        },
+        {
+          "roll": 3,
+          "result": "[Crimineel] Ze houden een levend wezen gevangen in een magische stasis — onbekend, mogelijk buitenaards."
+        },
+        {
+          "roll": 4,
+          "result": "[Crimineel] Ze experimenteren met geheugenextractie op vrijwillige studenten… waarvan sommigen niet vrijwillig blijken te zijn."
+        },
+        {
+          "roll": 5,
+          "result": "[Positief] Een kleine groep Ring-leden wil een medicijn ontwikkelen tegen magische vervuiling bij havenwerkers."
+        },
+        {
+          "roll": 6,
+          "result": "[Positief] Een professor organiseert gratis lessen voor kinderen die anders nooit magisch onderwijs zouden krijgen."
+        }
+      ]
+    },
+    {
+      "id": "citybook-upto-wachters-van-de-vlam",
+      "name": "What Are They Up To — De Wachters van de Vlam (d6)",
+      "description": "Activiteiten uit het Hempstead DM City Book, met bronrubriek per resultaat.",
+      "die": "1d6",
+      "rows": [
+        {
+          "roll": 1,
+          "result": "[Politiek] Ze willen een verplicht registratiesysteem voor alle magische gebruikers in Hempstead invoeren."
+        },
+        {
+          "roll": 2,
+          "result": "[Politiek] Een nieuwe wet moet de Orde het recht geven om ‘heilig land’ aan te wijzen in de stad, waarop zij volledige controle zouden hebben."
+        },
+        {
+          "roll": 3,
+          "result": "[Crimineel] Een geheime cel voert illegale “zuiveringen” uit van mensen die kritiek uiten."
+        },
+        {
+          "roll": 4,
+          "result": "[Crimineel] De Vlammonniken verkopen “beschermzegels” die eigenlijk vervloekt zijn om gehoorzaamheid af te dwingen."
+        },
+        {
+          "roll": 5,
+          "result": "[Positief] Een groep jonge Wachters runt een ondergrondse opvang voor misbruikte kinderen."
+        },
+        {
+          "roll": 6,
+          "result": "[Positief] Een priester onderzoekt misstanden binnen de eigen orde, met risico op zijn leven."
+        }
+      ]
+    },
+    {
+      "id": "citybook-upto-shadow-brokers",
+      "name": "What Are They Up To — The Shadow Brokers (d6)",
+      "description": "Activiteiten uit het Hempstead DM City Book, met bronrubriek per resultaat.",
+      "die": "1d6",
+      "rows": [
+        {
+          "roll": 1,
+          "result": "[Politiek] Ze verspreiden selectief geruchten om een conflict tussen de Ring en het Comité te laten escaleren."
+        },
+        {
+          "roll": 2,
+          "result": "[Politiek] Ze saboteren verkiezingen binnen gilden door zwartmaildossiers te lekken."
+        },
+        {
+          "roll": 3,
+          "result": "[Crimineel] Ze hebben een moordlijst geveild waarop drie prominente mensen staan."
+        },
+        {
+          "roll": 4,
+          "result": "[Crimineel] Ze verkopen illegaal gekopieerde spreukenboeken die levensgevaarlijk verkeerd zijn overgeschreven."
+        },
+        {
+          "roll": 5,
+          "result": "[Positief] Ze proberen een seriemoordenaar te stoppen — niet omdat ze geven om slachtoffers, maar omdat hij “verkeerd type chaos veroorzaakt”."
+        },
+        {
+          "roll": 6,
+          "result": "[Positief] Een Broker heeft informatie verzameld die een staatsgreep kan voorkomen, maar twijfelt wie hij die moet geven."
+        }
+      ]
+    },
+    {
+      "id": "citybook-upto-dock-rats",
+      "name": "What Are They Up To — The Dock Rats (d4)",
+      "description": "Activiteiten uit het Hempstead DM City Book, met bronrubriek per resultaat.",
+      "die": "1d4",
+      "rows": [
+        {
+          "roll": 1,
+          "result": "[Plan] Ze willen een groot graantransport kapen en verkopen aan Gutterfall-bendes."
+        },
+        {
+          "roll": 2,
+          "result": "[Plan] Ze zijn van plan een Riverguard-patrouille in een hinderlaag te lokken om hun leider vrij te kopen."
+        },
+        {
+          "roll": 3,
+          "result": "[Nu] Ze zijn verwikkeld in een gevecht om Pier 7 tegen een rivaliserende bende. (Haven)"
+        },
+        {
+          "roll": 4,
+          "result": "[Nu] Ze hebben net een magisch koffertje gestolen — dat ze niet open krijgen. (Haven)"
+        }
+      ]
+    },
+    {
+      "id": "citybook-upto-iron-fangs",
+      "name": "What Are They Up To — The Iron Fangs (d4)",
+      "description": "Activiteiten uit het Hempstead DM City Book, met bronrubriek per resultaat.",
+      "die": "1d4",
+      "rows": [
+        {
+          "roll": 1,
+          "result": "[Plan] Ze willen een illegale arena bouwen in een verlaten fabriekshal van Forgeward."
+        },
+        {
+          "roll": 2,
+          "result": "[Plan] Ze smeden een verbond met een rogue-druid uit Everwold om steroïde-achtige natuurdranken te maken."
+        },
+        {
+          "roll": 3,
+          "result": "[Nu] Ze vechten een territoriumoorlog uit met straatbendes die te dicht bij Grimholt komen. (Grimholt)"
+        },
+        {
+          "roll": 4,
+          "result": "[Nu] Ze hebben een Riverguard-wapenvoorraad onderschept en verstoppen de buit in de riolen. (Forgeward)"
+        }
+      ]
+    },
+    {
+      "id": "citybook-upto-ember-sisters",
+      "name": "What Are They Up To — The Ember Sisters (d4)",
+      "description": "Activiteiten uit het Hempstead DM City Book, met bronrubriek per resultaat.",
+      "die": "1d4",
+      "rows": [
+        {
+          "roll": 1,
+          "result": "[Plan] Ze bereiden een brandstichting voor op een pakhuis dat het Comité gebruikt."
+        },
+        {
+          "roll": 2,
+          "result": "[Plan] Ze proberen een ritueel om hun magie “op te laden” met gestolen artefacten uit het Arcanum."
+        },
+        {
+          "roll": 3,
+          "result": "[Nu] Ze martelen iemand die weigerde hun schulden af te betalen. (Oldstone)"
+        },
+        {
+          "roll": 4,
+          "result": "[Nu] Ze testen een nieuw soort brandspreuk op verlaten gebouwen — met instortingsgevaar. (Forgeward)"
+        }
+      ]
+    },
+    {
+      "id": "citybook-upto-sweeper-guild",
+      "name": "What Are They Up To — The Sweeper Guild (d4)",
+      "description": "Activiteiten uit het Hempstead DM City Book, met bronrubriek per resultaat.",
+      "die": "1d4",
+      "rows": [
+        {
+          "roll": 1,
+          "result": "[Plan] Ze willen de volledige routekaart van Riverguard-patrouilles verkopen aan de hoogste bieder."
+        },
+        {
+          "roll": 2,
+          "result": "[Plan] Ze infiltreren een werkplaats in Forgeward om geheime ontwerpen te stelen."
+        },
+        {
+          "roll": 3,
+          "result": "[Nu] Ze volgen een onbekend wezen dat door de straten sluipt en achtervolgen het al drie nachten. (Silverbloom)"
+        },
+        {
+          "roll": 4,
+          "result": "[Nu] Ze ruimen de crime scene op van een moord — en herschrijven het verhaal voor geld. (Theatrium/Haven)"
+        }
+      ]
     }
   ]
 }
