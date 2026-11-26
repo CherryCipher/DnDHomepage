@@ -1,3 +1,393 @@
 {
-  "monsters": []
+  "monsters": [
+    {
+      "index": "jarrik-hollow",
+      "name": "Jarrik ‘Tweevingers’ Hollow",
+      "base_monster": "commoner",
+      "faction": "Dock Rats / Grote Haven",
+      "city_book_note": "Commoner-kaart bij zijn NPC-profiel in het City Book; ex-Dock Rat."
+    },
+    {
+      "index": "kesh-the-violet",
+      "name": "Kesh the Violet",
+      "base_monster": "commoner",
+      "faction": "Gutterfall",
+      "city_book_note": "Commoner-kaart na haar NPC-profiel; gids door de tunnels."
+    },
+    {
+      "index": "zarlok-finch",
+      "name": "Zarlok Finch",
+      "base_monster": "mage",
+      "faction": "Arcanum Quarter / Theatrium",
+      "city_book_note": "Mage-kaart bij zijn tweede vermelding; een eigenzinnige uitvinder."
+    },
+    {
+      "index": "master-tyreld-shadequill",
+      "name": "Master Tyreld Shadequill",
+      "base_monster": "mage",
+      "faction": "De Zilveren Ring",
+      "city_book_note": "Mage-kaart achter zijn NPC-profiel; onderzoeker naar verboden magie."
+    },
+    {
+      "index": "chancellor-mordain-caltrass",
+      "name": "Chancellor Mordain Caltrass",
+      "base_monster": "noble",
+      "faction": "Huis Hems / Highcourt",
+      "city_book_note": "Noble-statblock bij de beschrijving van de kanselier."
+    },
+    {
+      "index": "prinses-marinthia-hems",
+      "name": "Prinses Marinthia Hems",
+      "base_monster": "assassin",
+      "faction": "Huis Hems / De Rookhand",
+      "city_book_note": "Assassin-statblock bij de geheime leider van de Rookhand."
+    },
+    {
+      "index": "jent-hollowheel",
+      "name": "Jent Hollowheel",
+      "base_monster": "thug",
+      "faction": "The Sweeper Guild",
+      "city_book_note": "Thug-statblock uit het blok bij de leider van de Sweepers."
+    },
+    {
+      "index": "seraphiel-dawnstar",
+      "name": "Hoge Wachter Seraphiel Dawnstar",
+      "base_monster": "archmage",
+      "faction": "De Wachters van de Vlam",
+      "city_book_note": "Eigen titel op een Archmage-gebaseerde kaart in het City Book.",
+      "armor_class": 12,
+      "hit_points": 99,
+      "hit_dice": "18d8+18",
+      "challenge_rating": 12,
+      "xp": 8400,
+      "strength": 10,
+      "dexterity": 14,
+      "constitution": 12,
+      "intelligence": 20,
+      "wisdom": 15,
+      "charisma": 16
+    },
+    {
+      "index": "vaelion-meristyr",
+      "name": "Arcane Arch-Commander Vaelion Meristyr",
+      "base_monster": "archmage",
+      "faction": "De Arcane Enforcers / De Zilveren Ring",
+      "city_book_note": "Eigen titel en aangepaste eigenschappen op Archmage-gebaseerde kaart.",
+      "armor_class": 12,
+      "hit_points": 99,
+      "hit_dice": "18d8+18",
+      "challenge_rating": 12,
+      "xp": 8400,
+      "strength": 10,
+      "dexterity": 14,
+      "constitution": 12,
+      "intelligence": 20,
+      "wisdom": 15,
+      "charisma": 16
+    },
+    {
+      "index": "shadowbroker-spy",
+      "name": "Shadowbroker (Spy)",
+      "base_monster": "spy",
+      "faction": "The Shadow Brokers",
+      "city_book_note": "Factievariant van de Spy-kaart.",
+      "armor_class": 12,
+      "hit_points": 27,
+      "hit_dice": "6d8",
+      "challenge_rating": 1,
+      "xp": 200
+    },
+    {
+      "index": "rookhand-shadow",
+      "name": "Rookhand Shadow",
+      "base_monster": "shadow",
+      "faction": "De Rookhand",
+      "city_book_note": "Generieke Shadow-kaart in de Rookhand-sectie."
+    },
+    {
+      "index": "hemstead-noble",
+      "name": "Hempstead Noble",
+      "base_monster": "noble",
+      "faction": "Highcourt",
+      "city_book_note": "Generieke Noble-kaart in de NPC-bijlage."
+    },
+    {
+      "index": "hemstead-commoner",
+      "name": "Hempstead Commoner",
+      "base_monster": "commoner",
+      "faction": "Hempstead",
+      "city_book_note": "Generieke Commoner-kaart in het City Book."
+    },
+    {
+      "index": "hemstead-bandit",
+      "name": "Hempstead Bandit",
+      "base_monster": "bandit",
+      "faction": "Hempsteadse bendes",
+      "city_book_note": "Generieke Bandit-kaart in het bendehoofdstuk."
+    },
+    {
+      "index": "hemstead-bandit-captain",
+      "name": "Hempstead Bandit Captain",
+      "base_monster": "bandit-captain",
+      "faction": "Hempsteadse bendes",
+      "city_book_note": "Bandit Captain-kaart uit het City Book."
+    },
+    {
+      "index": "hemstead-thug",
+      "name": "Hempstead Thug",
+      "base_monster": "thug",
+      "faction": "Hempsteadse bendes",
+      "city_book_note": "Generieke Thug-kaart in de factiebijlage."
+    },
+    {
+      "index": "hemstead-priest",
+      "name": "Wachter van de Vlam — Priester",
+      "base_monster": "priest",
+      "faction": "De Wachters van de Vlam",
+      "city_book_note": "Priest-kaart bij de Wachters van de Vlam."
+    },
+    {
+      "index": "hemstead-mage",
+      "name": "Hempstead Mage",
+      "base_monster": "mage",
+      "faction": "De Zilveren Ring",
+      "city_book_note": "Generieke Mage-kaart uit de bijlage."
+    },
+    {
+      "index": "hemstead-assassin",
+      "name": "Hempstead Assassin",
+      "base_monster": "assassin",
+      "faction": "Hempsteadse onderwereld",
+      "city_book_note": "Assassin-kaart bij Highcourt."
+    },
+    {
+      "index": "riverguard-palace-knight",
+      "name": "Riverguard — Palace Knight",
+      "base_monster": null,
+      "faction": "Huis Hems / Riverguard",
+      "city_book_note": "Aparte eigen kaart in City Book: AC 19, HP 112, CR 5.",
+      "size": "Medium",
+      "type": "humanoid",
+      "alignment": "lawful good",
+      "armor_class": 19,
+      "hit_points": 112,
+      "hit_dice": "15d8+45",
+      "challenge_rating": 5,
+      "xp": 1800,
+      "speed": {
+        "walk": "30 ft."
+      },
+      "strength": 18,
+      "dexterity": 15,
+      "constitution": 16,
+      "intelligence": 10,
+      "wisdom": 12,
+      "charisma": 15,
+      "proficiencies": [
+        {
+          "proficiency": {
+            "index": "skill-athletics",
+            "name": "Skill: Athletics"
+          },
+          "value": 7
+        },
+        {
+          "proficiency": {
+            "index": "skill-intimidation",
+            "name": "Skill: Intimidation"
+          },
+          "value": 5
+        }
+      ],
+      "special_abilities": [
+        {
+          "name": "Martial Advantage",
+          "desc": "Once per turn, the Palace Knight deals an extra 3 (1d6) damage when hitting a creature within 5 feet of an ally that is not incapacitated."
+        },
+        {
+          "name": "Brave",
+          "desc": "Advantage on saving throws against being frightened."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "desc": "Makes two attacks."
+        },
+        {
+          "name": "Spear",
+          "desc": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft. Hit: 7 (1d6 + 4) piercing, or 8 (1d8 + 4) used with two hands."
+        },
+        {
+          "name": "Longsword",
+          "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft. Hit: 8 (1d8 + 4) slashing, or 9 (1d10 + 4) used with two hands."
+        },
+        {
+          "name": "Shield Bash",
+          "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft. Hit: 9 (2d4 + 4) bludgeoning; Medium or smaller target DC 15 Strength save or prone."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Parry",
+          "desc": "Adds 3 to AC against a melee attack that would hit, while holding a melee weapon and seeing the attacker."
+        }
+      ]
+    },
+    {
+      "index": "the-grey-crow",
+      "name": "The Grey Crow",
+      "base_monster": null,
+      "faction": "The Shadow Brokers",
+      "city_book_note": "Eigen statblock van de leider van de Shadow Brokers uit het City Book.",
+      "size": "Medium",
+      "type": "humanoid",
+      "alignment": "neutral evil",
+      "armor_class": 16,
+      "hit_points": 71,
+      "hit_dice": "11d8+22",
+      "challenge_rating": 5,
+      "xp": 1800,
+      "speed": {
+        "walk": "30 ft."
+      },
+      "strength": 13,
+      "dexterity": 18,
+      "constitution": 14,
+      "intelligence": 11,
+      "wisdom": 13,
+      "charisma": 12,
+      "senses": {
+        "darkvision": "120 ft.",
+        "passive_perception": 14
+      },
+      "languages": "Elvish, Undercommon",
+      "special_abilities": [
+        {
+          "name": "Fey Ancestry",
+          "desc": "Advantage on saving throws against being charmed. Magic can't put the Grey Crow to sleep."
+        },
+        {
+          "name": "Innate Spellcasting",
+          "desc": "Charisma (DC 12); at will: dancing lights; 1/day each: darkness, faerie fire."
+        },
+        {
+          "name": "Sunlight Sensitivity",
+          "desc": "Disadvantage on attack rolls and sight-based Perception checks in sunlight."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "desc": "Makes two shortsword attacks."
+        },
+        {
+          "name": "Shortsword",
+          "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft. Hit: 5 (1d6 + 2) piercing."
+        },
+        {
+          "name": "Hand Crossbow",
+          "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft. Hit: 5 (1d6 + 2) piercing. Target makes DC 13 Constitution save or is poisoned for 1 hour; failure by 5 or more also makes it unconscious while poisoned until damaged or woken by another creature."
+        }
+      ],
+      "reactions": [
+        {
+          "name": "Parry",
+          "desc": "Adds 3 to AC against one melee attack that would hit, provided the attacker is visible and the Grey Crow holds a melee weapon."
+        }
+      ]
+    },
+    {
+      "index": "ember-sister",
+      "name": "Ember Sister",
+      "base_monster": null,
+      "faction": "The Ember Sisters",
+      "city_book_note": "Eigen benoemde Cult Fanatic-gebaseerde statblock uit het City Book.",
+      "size": "Medium",
+      "type": "humanoid",
+      "alignment": "non-good",
+      "armor_class": 13,
+      "hit_points": 33,
+      "hit_dice": "6d8+6",
+      "challenge_rating": 2,
+      "xp": 450,
+      "speed": {
+        "walk": "30 ft."
+      },
+      "strength": 11,
+      "dexterity": 14,
+      "constitution": 12,
+      "intelligence": 10,
+      "wisdom": 13,
+      "charisma": 14,
+      "languages": "any one language",
+      "senses": {
+        "passive_perception": 11
+      },
+      "special_abilities": [
+        {
+          "name": "Dark Devotion",
+          "desc": "Advantage on saving throws against being charmed or frightened."
+        },
+        {
+          "name": "Spellcasting",
+          "desc": "4th-level spellcaster, Wisdom (DC 11, +3 to hit). Cantrips: light, sacred flame, thaumaturgy. 1st level (4 slots): command, inflict wounds, shield of faith. 2nd level (3 slots): hold person, spiritual weapon."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Multiattack",
+          "desc": "Makes two melee attacks."
+        },
+        {
+          "name": "Dagger",
+          "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft. Hit: 4 (1d4 + 2) piercing."
+        }
+      ]
+    },
+    {
+      "index": "everwold-dog",
+      "name": "Everwold Dog",
+      "base_monster": null,
+      "faction": "Everwold",
+      "city_book_note": "Eigen Everwold Dog-kaart uit de bijlage; teleportatie en Keen Hearing & Smell.",
+      "size": "Medium",
+      "type": "fey",
+      "alignment": "neutral",
+      "armor_class": 13,
+      "hit_points": 22,
+      "hit_dice": "4d8+4",
+      "challenge_rating": 0.25,
+      "xp": 50,
+      "speed": {
+        "walk": "40 ft."
+      },
+      "strength": 12,
+      "dexterity": 17,
+      "constitution": 12,
+      "intelligence": 4,
+      "wisdom": 13,
+      "charisma": 6,
+      "languages": "Blink Dog (understands Sylvan but cannot speak)",
+      "senses": {
+        "passive_perception": 13
+      },
+      "special_abilities": [
+        {
+          "name": "Keen Hearing and Smell",
+          "desc": "Advantage on Wisdom (Perception) checks relying on hearing or smell."
+        }
+      ],
+      "actions": [
+        {
+          "name": "Bite",
+          "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft. Hit: 4 (1d6 + 1) piercing."
+        },
+        {
+          "name": "Teleport (Recharge 4–6)",
+          "desc": "Magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack."
+        }
+      ]
+    }
+  ]
 }
