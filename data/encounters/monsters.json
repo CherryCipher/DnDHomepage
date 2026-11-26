@@ -5,49 +5,56 @@
       "name": "Jarrik ‘Tweevingers’ Hollow",
       "base_monster": "commoner",
       "faction": "Dock Rats / Grote Haven",
-      "city_book_note": "Commoner-kaart bij zijn NPC-profiel in het City Book; ex-Dock Rat."
+      "city_book_note": "Commoner-kaart bij zijn NPC-profiel in het City Book; ex-Dock Rat.",
+      "statblock_image": "data/encounters/statblocks/commoner.png"
     },
     {
       "index": "kesh-the-violet",
       "name": "Kesh the Violet",
       "base_monster": "commoner",
       "faction": "Gutterfall",
-      "city_book_note": "Commoner-kaart na haar NPC-profiel; gids door de tunnels."
+      "city_book_note": "Commoner-kaart na haar NPC-profiel; gids door de tunnels.",
+      "statblock_image": "data/encounters/statblocks/commoner.png"
     },
     {
       "index": "zarlok-finch",
       "name": "Zarlok Finch",
       "base_monster": "mage",
       "faction": "Arcanum Quarter / Theatrium",
-      "city_book_note": "Mage-kaart bij zijn tweede vermelding; een eigenzinnige uitvinder."
+      "city_book_note": "Mage-kaart bij zijn tweede vermelding; een eigenzinnige uitvinder.",
+      "statblock_image": "data/encounters/statblocks/mage.png"
     },
     {
       "index": "master-tyreld-shadequill",
       "name": "Master Tyreld Shadequill",
       "base_monster": "mage",
       "faction": "De Zilveren Ring",
-      "city_book_note": "Mage-kaart achter zijn NPC-profiel; onderzoeker naar verboden magie."
+      "city_book_note": "Mage-kaart achter zijn NPC-profiel; onderzoeker naar verboden magie.",
+      "statblock_image": "data/encounters/statblocks/mage.png"
     },
     {
       "index": "chancellor-mordain-caltrass",
       "name": "Chancellor Mordain Caltrass",
       "base_monster": "noble",
       "faction": "Huis Hems / Highcourt",
-      "city_book_note": "Noble-statblock bij de beschrijving van de kanselier."
+      "city_book_note": "Noble-statblock bij de beschrijving van de kanselier.",
+      "statblock_image": "data/encounters/statblocks/noble.png"
     },
     {
       "index": "prinses-marinthia-hems",
       "name": "Prinses Marinthia Hems",
       "base_monster": "assassin",
       "faction": "Huis Hems / De Rookhand",
-      "city_book_note": "Assassin-statblock bij de geheime leider van de Rookhand."
+      "city_book_note": "Assassin-statblock bij de geheime leider van de Rookhand.",
+      "statblock_image": "data/encounters/statblocks/shadow-alt.png"
     },
     {
       "index": "jent-hollowheel",
       "name": "Jent Hollowheel",
       "base_monster": "thug",
       "faction": "The Sweeper Guild",
-      "city_book_note": "Thug-statblock uit het blok bij de leider van de Sweepers."
+      "city_book_note": "Thug-statblock uit het blok bij de leider van de Sweepers.",
+      "statblock_image": "data/encounters/statblocks/thug.png"
     },
     {
       "index": "seraphiel-dawnstar",
@@ -65,7 +72,8 @@
       "constitution": 12,
       "intelligence": 20,
       "wisdom": 15,
-      "charisma": 16
+      "charisma": 16,
+      "statblock_image": "data/encounters/statblocks/seraphiel-dawnstar.png"
     },
     {
       "index": "vaelion-meristyr",
@@ -83,7 +91,8 @@
       "constitution": 12,
       "intelligence": 20,
       "wisdom": 15,
-      "charisma": 16
+      "charisma": 16,
+      "statblock_image": "data/encounters/statblocks/vaelion-meristyr.png"
     },
     {
       "index": "shadowbroker-spy",
@@ -95,70 +104,80 @@
       "hit_points": 27,
       "hit_dice": "6d8",
       "challenge_rating": 1,
-      "xp": 200
+      "xp": 200,
+      "statblock_image": "data/encounters/statblocks/shadowbroker-spy.png"
     },
     {
       "index": "rookhand-shadow",
       "name": "Rookhand Shadow",
       "base_monster": "shadow",
       "faction": "De Rookhand",
-      "city_book_note": "Generieke Shadow-kaart in de Rookhand-sectie."
+      "city_book_note": "Generieke Shadow-kaart in de Rookhand-sectie.",
+      "statblock_image": "data/encounters/statblocks/shadow.png"
     },
     {
       "index": "hemstead-noble",
       "name": "Hempstead Noble",
       "base_monster": "noble",
       "faction": "Highcourt",
-      "city_book_note": "Generieke Noble-kaart in de NPC-bijlage."
+      "city_book_note": "Generieke Noble-kaart in de NPC-bijlage.",
+      "statblock_image": "data/encounters/statblocks/noble.png"
     },
     {
       "index": "hemstead-commoner",
       "name": "Hempstead Commoner",
       "base_monster": "commoner",
       "faction": "Hempstead",
-      "city_book_note": "Generieke Commoner-kaart in het City Book."
+      "city_book_note": "Generieke Commoner-kaart in het City Book.",
+      "statblock_image": "data/encounters/statblocks/commoner.png"
     },
     {
       "index": "hemstead-bandit",
       "name": "Hempstead Bandit",
       "base_monster": "bandit",
       "faction": "Hempsteadse bendes",
-      "city_book_note": "Generieke Bandit-kaart in het bendehoofdstuk."
+      "city_book_note": "Generieke Bandit-kaart in het bendehoofdstuk.",
+      "statblock_image": "data/encounters/statblocks/bandit.png"
     },
     {
       "index": "hemstead-bandit-captain",
       "name": "Hempstead Bandit Captain",
       "base_monster": "bandit-captain",
       "faction": "Hempsteadse bendes",
-      "city_book_note": "Bandit Captain-kaart uit het City Book."
+      "city_book_note": "Bandit Captain-kaart uit het City Book.",
+      "statblock_image": "data/encounters/statblocks/bandit-captain.png"
     },
     {
       "index": "hemstead-thug",
       "name": "Hempstead Thug",
       "base_monster": "thug",
       "faction": "Hempsteadse bendes",
-      "city_book_note": "Generieke Thug-kaart in de factiebijlage."
+      "city_book_note": "Generieke Thug-kaart in de factiebijlage.",
+      "statblock_image": "data/encounters/statblocks/thug.png"
     },
     {
       "index": "hemstead-priest",
       "name": "Wachter van de Vlam — Priester",
       "base_monster": "priest",
       "faction": "De Wachters van de Vlam",
-      "city_book_note": "Priest-kaart bij de Wachters van de Vlam."
+      "city_book_note": "Priest-kaart bij de Wachters van de Vlam.",
+      "statblock_image": "data/encounters/statblocks/priest.png"
     },
     {
       "index": "hemstead-mage",
       "name": "Hempstead Mage",
       "base_monster": "mage",
       "faction": "De Zilveren Ring",
-      "city_book_note": "Generieke Mage-kaart uit de bijlage."
+      "city_book_note": "Generieke Mage-kaart uit de bijlage.",
+      "statblock_image": "data/encounters/statblocks/mage.png"
     },
     {
       "index": "hemstead-assassin",
       "name": "Hempstead Assassin",
       "base_monster": "assassin",
       "faction": "Hempsteadse onderwereld",
-      "city_book_note": "Assassin-kaart bij Highcourt."
+      "city_book_note": "Assassin-kaart bij Highcourt.",
+      "statblock_image": "data/encounters/statblocks/shadow-alt.png"
     },
     {
       "index": "riverguard-palace-knight",
@@ -232,7 +251,8 @@
           "name": "Parry",
           "desc": "Adds 3 to AC against a melee attack that would hit, while holding a melee weapon and seeing the attacker."
         }
-      ]
+      ],
+      "statblock_image": "data/encounters/statblocks/palace-knight.png"
     },
     {
       "index": "the-grey-crow",
@@ -295,7 +315,8 @@
           "name": "Parry",
           "desc": "Adds 3 to AC against one melee attack that would hit, provided the attacker is visible and the Grey Crow holds a melee weapon."
         }
-      ]
+      ],
+      "statblock_image": "data/encounters/statblocks/the-grey-crow.png"
     },
     {
       "index": "ember-sister",
@@ -343,7 +364,8 @@
           "name": "Dagger",
           "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft. Hit: 4 (1d4 + 2) piercing."
         }
-      ]
+      ],
+      "statblock_image": "data/encounters/statblocks/ember-sister.png"
     },
     {
       "index": "everwold-dog",
@@ -387,7 +409,8 @@
           "name": "Teleport (Recharge 4–6)",
           "desc": "Magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack."
         }
-      ]
+      ],
+      "statblock_image": "data/encounters/statblocks/everwold-dog.png"
     },
     {
       "index": "hemstead-bard",
@@ -437,7 +460,8 @@
           "name": "Taunt (2/Day)",
           "desc": "One creature within 30 ft that can hear the bard makes DC 12 Charisma save or has disadvantage on ability checks, attack rolls and saving throws until start of bard's next turn."
         }
-      ]
+      ],
+      "statblock_image": "data/encounters/statblocks/bard.png"
     },
     {
       "index": "high-enforcer",
@@ -449,7 +473,8 @@
       "hit_points": 40,
       "hit_dice": "9d8",
       "challenge_rating": 6,
-      "xp": 2300
+      "xp": 2300,
+      "statblock_image": "data/encounters/statblocks/high-enforcer.png"
     },
     {
       "index": "vlammonnik",
@@ -461,7 +486,8 @@
       "hit_points": 33,
       "hit_dice": "6d8+6",
       "challenge_rating": 2,
-      "xp": 450
+      "xp": 450,
+      "statblock_image": "data/encounters/statblocks/vlammonnik.png"
     },
     {
       "index": "wachter-van-de-vlam",
@@ -473,14 +499,16 @@
       "hit_points": 9,
       "hit_dice": "2d8",
       "challenge_rating": 0.25,
-      "xp": 50
+      "xp": 50,
+      "statblock_image": "data/encounters/statblocks/wachter-van-de-vlam.png"
     },
     {
       "index": "hemstead-bandit-lord",
       "name": "Bandit Lord",
       "base_monster": "bandit-captain",
       "faction": "Hempsteadse bendes",
-      "city_book_note": "Bewerkte Bandit Captain-variant uit de City Book-kaarten."
+      "city_book_note": "Bewerkte Bandit Captain-variant uit de City Book-kaarten.",
+      "statblock_image": "data/encounters/statblocks/bandit-lord.png"
     },
     {
       "index": "riverguard-patrol",
@@ -523,7 +551,8 @@
           "name": "Shield Bash",
           "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft. Hit: 9 (2d4+4) bludgeoning; Medium or smaller target DC 15 Strength save or knocked prone."
         }
-      ]
+      ],
+      "statblock_image": "data/encounters/statblocks/riverguard-patrol.png"
     },
     {
       "index": "halvemaanwacht",
@@ -570,7 +599,8 @@
           "name": "Longbow",
           "desc": "Ranged Weapon Attack: +3 to hit, range 150/600 ft. Hit: 5 (1d8+1) piercing."
         }
-      ]
+      ],
+      "statblock_image": "data/encounters/statblocks/halvemaanwacht.png"
     }
   ]
 }
